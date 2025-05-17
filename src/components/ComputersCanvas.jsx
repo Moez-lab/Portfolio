@@ -47,7 +47,7 @@ export default function ComputersCanvas() {
 
       <Suspense fallback={<Loader />}>
         <OrbitControls
-          enableZoom={orbitZoom}
+          enableZoom={false}
           maxPolarAngle={Math.PI / 2}
           minPolarAngle={Math.PI / 2}
         //   enabled={!isMobile}

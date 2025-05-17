@@ -23,7 +23,9 @@ import {
   jobit,
   tripguide,
   threejs,
+  machine,
 } from "../assets";
+
 
 export const navLinks = [
   {
@@ -57,6 +59,10 @@ const services = [
     title: "Content Creator",
     icon: creator,
   },
+  {
+    title:"AI/ML Enthusiast",
+    icon: machine,
+  }
 ];
 
 const technologies = [
