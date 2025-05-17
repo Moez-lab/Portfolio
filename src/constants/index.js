@@ -16,9 +16,10 @@ import {
   figma,
   docker,
   meta,
-  starbucks,
+  react,
   tesla,
   shopify,
+  cv,
   carrent,
   jobit,
   tripguide,
@@ -62,6 +63,10 @@ const services = [
   {
     title:"AI/ML Enthusiast",
     icon: machine,
+  },
+  {
+    title:"CV Specialist ",
+    icon: cv,
   }
 ];
 
@@ -115,18 +120,22 @@ const technologies = [
     icon: figma,
   },
   {
-    name: "docker",
-    icon: docker,
+    name: "CV",
+    icon: cv,
   },
+  {
+    name:"AI/ML",
+    icon: machine,
+  }
 ];
 
 const experiences = [
   {
     title: "React.js Developer",
-    company_name: "Starbucks",
-    icon: starbucks,
+    company_name: "",
+    icon: react,
     iconBg: "#383E56",
-    date: "March 2020 - April 2021",
+    date: "September 2022 - Present",
     points: [
       "Developing and maintaining web applications using React.js and other related technologies.",
       "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
@@ -136,23 +145,10 @@ const experiences = [
   },
   {
     title: "React Native Developer",
-    company_name: "Tesla",
-    icon: tesla,
-    iconBg: "#E6DEDD",
-    date: "Jan 2021 - Feb 2022",
-    points: [
-      "Developing and maintaining web applications using React.js and other related technologies.",
-      "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-      "Implementing responsive design and ensuring cross-browser compatibility.",
-      "Participating in code reviews and providing constructive feedback to other developers.",
-    ],
-  },
-  {
-    title: "Web Developer",
-    company_name: "Shopify",
-    icon: shopify,
+    company_name: "",
+    icon: react,
     iconBg: "#383E56",
-    date: "Jan 2022 - Jan 2023",
+    date: "Jan 2023 - Present",
     points: [
       "Developing and maintaining web applications using React.js and other related technologies.",
       "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
@@ -162,7 +158,7 @@ const experiences = [
   },
   {
     title: "Full stack Developer",
-    company_name: "Meta",
+    company_name: "",
     icon: meta,
     iconBg: "#E6DEDD",
     date: "Jan 2023 - Present",
@@ -172,6 +168,33 @@ const experiences = [
       "Implementing responsive design and ensuring cross-browser compatibility.",
       "Participating in code reviews and providing constructive feedback to other developers.",
     ],
+  },
+  {
+    title: "AI/ML Enthusiast",
+    company_name: "",
+    icon: machine,
+    iconBg: "#383E56",
+    date: "Jan 2024 - Present",
+    points: [
+      "Developing and maintaining web applications using React.js and related technologies.",
+      "Learning AI from Andrew Ng, including supervised, unsupervised, and deep learning.",
+      "Building AI models for iris detection, email spam detection, house price prediction, and face detection.",
+      "Applying machine learning techniques using TensorFlow and Scikit-learn for real-world projects.",
+    ],
+  },
+  {
+    title: "Computer Vision Specialist",
+    company_name: "",
+    icon: cv,
+    iconBg: "#383E56",
+    date: "Jan 2025 - Present",
+    points: [
+      "Implemented computer vision algorithms to create traffic light detection systems using PCA, YOLO, and image processing techniques.",
+      "Developed skin and nose detection models, enhancing image analysis and recognition accuracy.",
+      "Leveraged depth perception algorithms to enable a computer to determine the proximity of objects.",
+      "Applied advanced image processing methods for feature extraction and object classification.",
+    ],
+
   },
 ];
 
