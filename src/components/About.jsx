@@ -9,8 +9,9 @@ const ServiceCard = ({ index, title, icon }) => {
   return (
     <Tilt className="xs:w-[250px] w-full">
       <motion.div
-        variants={fadeIn('right', 'spring', index * 0.5, 0.75)}
+        variants={fadeIn('right', 'spring', index * 0.25, 0.5)}
         className="w-full green-pink-gradient p-[1px] rounded-[20px] shadow-card"
+        viewport={{ once: true, amount: 0.3 }} // Trigger earlier and only once
       >
         <div
           options={{
@@ -28,22 +29,28 @@ const ServiceCard = ({ index, title, icon }) => {
           <h3 className="text-white text-[20px] font-bold text-center">{title}</h3>
         </div>
       </motion.div>
-
     </Tilt>
   )
 }
 
-const About = ()=> {
+const About = () => {
   return (
     <>
-      <motion.div variants={textVariant()}>
-        <p className={styles.sectionSubText}>Introduction</p>
-        <h2 className={styles.sectionHeadText}>Overview</h2>
-      </motion.div>
+     <motion.div 
+        variants={textVariant()} 
+        initial="hidden" 
+        whileInView="show" 
+        viewport={{ once: true, amount: 0.1 }} // Trigger as soon as 10% of the element is in view
+        >
+          <p className={styles.sectionSubText}>Introduction</p>
+          <h2 className={styles.sectionHeadText}>Overview</h2>
+     </motion.div>
+
 
       <motion.p
-        variants={fadeIn('', '', 0.1, 1)}
+        variants={fadeIn('', '', 0.05, 0.55)}
         className={`${styles.sectionSubText} mt-4 text-secondary text-[17px] max-w-3xl leading-[30px]`}
+        viewport={{ once: true, amount: 0.3 }} // Adjusted viewport trigger
       >
         🌐 Envision a web where functionality meets finesse. That's the platform I craft with my MERN stack and mobile app development skills. <br /><br />
         I’m a 6th-semester Computer Science student at COMSATS University Islamabad, majoring in AI and Development. My passion for problem-solving drives me to build scalable web applications using MongoDB, Express, React, and Node.js. <br /><br />
