@@ -31,8 +31,16 @@ import tesla from "./company/tesla.png";
 import carrent from "./carrent.png";
 import jobit from "./jobit.png";
 import tripguide from "./tripguide.png";
+import zomato from "./zomato.jpg";
+import house from "./house.png";
+import face_reg from "./face_reg.png";
+import email_spam from "./email_spam.jpg";
 
 export {
+  email_spam,
+  face_reg,
+  house,
+  zomato,
   cv,
   machine,
   logo,

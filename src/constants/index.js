@@ -25,6 +25,10 @@ import {
   tripguide,
   threejs,
   machine,
+  zomato,
+  house,
+  face_reg,
+  email_spam,
 } from "../assets";
 
 
@@ -227,16 +231,16 @@ const testimonials = [
 
 const projects = [
   {
-    name: "Car Rent",
+    name: "Zomato App", 
     description:
-      "Web-based platform that allows users to search, book, and manage car rentals from various providers, providing a convenient and efficient solution for transportation needs.",
+      "A cross-platform mobile application that replicates the core functionalities of the Zomato food delivery experience. Built using React Native with Expo for fast development and deployment, Supabase as the backend-as-a-service for authentication, and Redux Toolkit for efficient global state management.",
     tags: [
       {
-        name: "react",
+        name: "React Native",
         color: "blue-text-gradient",
       },
       {
-        name: "mongodb",
+        name: "Supabase",
         color: "green-text-gradient",
       },
       {
@@ -244,50 +248,71 @@ const projects = [
         color: "pink-text-gradient",
       },
     ],
-    image: carrent,
-    source_code_link: "https://github.com/",
+    image:  zomato,
+    source_code_link: "https://github.com/Moez-lab/Zomato-Food-App",
   },
   {
-    name: "Job IT",
+    name: "House Price Prediction",
     description:
-      "Web application that enables users to search for job openings, view estimated salary ranges for positions, and locate available jobs based on their current location.",
+      "A Machine Learning project that predicts California house prices using Linear Regression and Random Forest. It includes data preprocessing, feature engineering, visualizations, and model evaluation with hyperparameter tuning using GridSearchCV..",
     tags: [
       {
-        name: "react",
+        name: "ML",
         color: "blue-text-gradient",
       },
       {
-        name: "restapi",
+        name: "Supervised Learning",
         color: "green-text-gradient",
       },
       {
-        name: "scss",
+        name: "Random Forest",
         color: "pink-text-gradient",
       },
     ],
-    image: jobit,
-    source_code_link: "https://github.com/",
+    image: house,
+    source_code_link: "https://github.com/Moez-lab/House-Price-Prediction",
   },
   {
-    name: "Trip Guide",
+    name: "Face Recognition System",
     description:
-      "A comprehensive travel booking platform that allows users to book flights, hotels, and rental cars, and offers curated recommendations for popular destinations.",
+      "🎯 A face recognition system using PCA for dimensionality reduction and SVM for classification. Achieves high accuracy on facial image data with hyperparameter tuning and cross-validation.",
     tags: [
       {
-        name: "nextjs",
+        name: "PCA",
         color: "blue-text-gradient",
       },
       {
-        name: "supabase",
+        name: "Neural Networks",
         color: "green-text-gradient",
       },
       {
-        name: "css",
+        name: "CNN",
         color: "pink-text-gradient",
       },
     ],
-    image: tripguide,
-    source_code_link: "https://github.com/",
+    image: face_reg,
+    source_code_link: "https://github.com/Moez-lab/FaceRecoginitionSystem",
+  },
+  {
+    name: "Email Spam Detection",
+    description:
+      "A simple machine learning project that classifies emails as Spam or Ham using Logistic Regression and TF-IDF vectorization. Built with Python and scikit-learn.",
+    tags: [
+      {
+        name: "NLP",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "TFIDF",
+        color: "green-text-gradient",
+      },
+      {
+        name: "Binary Classification",
+        color: "pink-text-gradient",
+      },
+    ],
+    image: email_spam,
+    source_code_link: "https://github.com/Moez-lab/Spam-Email-Detector",
   },
 ];
 

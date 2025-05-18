@@ -49,7 +49,7 @@ const About = ()=> {
         I’m a 6th-semester Computer Science student at COMSATS University Islamabad, majoring in AI and Development. My passion for problem-solving drives me to build scalable web applications using MongoDB, Express, React, and Node.js. <br /><br />
         With expertise in Microsoft SQL Server and Figma, I combine technical precision with user-centric design to create engaging digital experiences. My primary focus is on leveraging AI to build smarter, more intuitive solutions.<br /><br />
         Let’s connect if you're looking for a dynamic developer who blends AI innovation with technical expertise!<br /><br />
-        🌐 GitHub: <a href="https://github.com/Moez-lab" target="_blank" rel="noopener noreferrer">github.com/Moez-lab</a>
+        🌐 [GitHub] : <a href="https://github.com/Moez-lab" target="_blank" rel="noopener noreferrer">github.com/Moez-lab</a>
       </motion.p>
 
       <div className="mt-20 flex flex-wrap gap-10">

@@ -4,6 +4,7 @@ import Hero  from "./components/Hero";
 import About from "./components/About";
 import Experience from "./components/Experience";
 import Tech from "./components/Tech";
+import Work from "./components/Work";
 
 export default function App() {
   return (
@@ -15,6 +16,7 @@ export default function App() {
         <About/>
         <Experience/>
         <Tech/>
+        <Work/>
       </div>
     </div>
     </BrowserRouter>
