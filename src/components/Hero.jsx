@@ -2,7 +2,9 @@ import { motion } from "framer-motion";
 import { styles } from "../style";
 import { Link } from "react-router-dom";
 // Import your personal photo here
-import myPhoto from "../assets/cv.png"; 
+import myPhoto from "../assets/pfpic.png"; 
+import resume from "../assets/resume.pdf"; 
+
 
 const Hero = () => {
   return (
@@ -61,8 +63,9 @@ const Hero = () => {
 
               <a
                 className="flex flex-col justify-center items-center hover:scale-110 transition-transform"
-                href="https://github.com/Moez-lab"
+                href={resume}
                 target="_blank"
+                download="Moez_Zakir_Resume.pdf"
                 rel="noopener noreferrer"
               >
                 <img
@@ -82,10 +85,12 @@ const Hero = () => {
             {/* Optional: Add a glow effect behind the image */}
             <div className="absolute z-0 w-[40%] h-[35%] top-0 pink__gradient" />
             
-            <img 
-                src={myPhoto} 
-                alt="Moez" 
-                className="w-[80%] h-auto object-contain rounded-2xl z-10 border-2 border-secondary/20 shadow-card"
+            <img
+                src={myPhoto}
+                alt="Moez"
+                // Replaced rounded-2xl with rounded-full.
+                // Added aspect-square and changed object-contain to object-cover for a perfect circle.
+                className="w-[70%] aspect-square object-cover rounded-full z-10 border-2 border-secondary/20 shadow-card"
             />
           </div>
 

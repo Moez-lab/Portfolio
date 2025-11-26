@@ -3,6 +3,7 @@ import { Link } from "react-router-dom";
 import { styles } from "../style";
 import { navLinks } from "../constants";
 import { logo, menu, close } from "../assets";
+import resume from "../assets/resume.pdf"; 
 
 const Navbar = () => {
   const [active, setActive] = useState("");
@@ -13,6 +14,8 @@ const Navbar = () => {
       className={`${styles.paddingX} w-full flex items-center py-5 fixed top-0 z-20 bg-primary`}
     >
       <div className="w-full flex justify-between items-center max-w-7xl mx-auto">
+        
+        {/* Logo + Home Link */}
         <Link
           to={"/"}
           className="flex items-center gap-2"
@@ -26,33 +29,38 @@ const Navbar = () => {
             Moez &nbsp; <span className="sm:block hidden">| Portfolio</span>
           </p>
         </Link>
-        
+
         {/* Desktop Navigation */}
         <ul className="list-none hidden sm:flex flex-row gap-10">
-          {navLinks.map((items) => {
-            return (
-              <li
-                key={items.id}
-                className={`${
-                  active === items.title ? "text-white" : "text-secondary"
-                } hover:text-white text-[18px] font-medium cursor-pointer`}
-                onClick={() => setActive(items.title)}
-              >
-                <a href={`#${items.id}`}>{items.title}</a>
-              </li>
-            );
-          })}
-          {/* Added LinkedIn for Desktop view here as well (Optional) */}
-           <li className="text-secondary hover:text-white text-[18px] font-medium cursor-pointer">
-              <a href="https://www.linkedin.com/in/moezzakir/" target="_blank" rel="noopener noreferrer">
-                LinkedIn
-              </a>
-           </li>
-           <li className="text-secondary hover:text-white text-[18px] font-medium cursor-pointer">
-              <a href="https://www.linkedin.com/in/moezzakir/" target="_blank" rel="noopener noreferrer">
-                Resume Download ⬇️
-              </a>
-           </li>
+          {navLinks.map((items) => (
+            <li
+              key={items.id}
+              className={`${
+                active === items.title ? "text-white" : "text-secondary"
+              } hover:text-white text-[18px] font-medium cursor-pointer`}
+              onClick={() => setActive(items.title)}
+            >
+              <a href={`#${items.id}`}>{items.title}</a>
+            </li>
+          ))}
+
+          {/* LinkedIn */}
+          <li className="text-secondary hover:text-white text-[18px] font-medium cursor-pointer">
+            <a
+              href="https://www.linkedin.com/in/moezzakir/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              LinkedIn
+            </a>
+          </li>
+
+          {/* Resume Download (Desktop) */}
+          <li className="text-secondary hover:text-white text-[18px] font-medium cursor-pointer">
+            <a href={resume} download="Moez_Zakir_Resume.pdf">
+              Resume Download ⬇️
+            </a>
+          </li>
         </ul>
 
         {/* Mobile Navigation */}
@@ -63,44 +71,57 @@ const Navbar = () => {
             className="w-[28px] h-[28px] object-contain cursor-pointer"
             onClick={() => setToggle(!toggle)}
           />
+
           <div
             className={`${
               !toggle ? "hidden" : "flex"
             } p-6 black-gradient absolute z-10 top-20 right-0 mx-4 my-2 min-w-[140px] rounded-xl`}
           >
             <ul className="list-none flex flex-col gap-4 justify-end items-center">
-              {/* --- LINKEDIN FIX START --- */}
+
+              {/* LinkedIn (Mobile) */}
               <li className="text-secondary font-poppins text-[16px] font-medium cursor-pointer hover:text-white">
-                <a 
-                  href="https://www.linkedin.com/in/YOUR_LINK_HERE" 
-                  target="_blank" 
+                <a
+                  href="https://www.linkedin.com/in/moezzakir/"
+                  target="_blank"
                   rel="noopener noreferrer"
-                  onClick={() => setToggle(!toggle)} // Close menu when clicked
+                  onClick={() => setToggle(!toggle)}
                 >
                   LinkedIn
                 </a>
               </li>
-              {/* --- LINKEDIN FIX END --- */}
 
-              {navLinks.map((items) => {
-                return (
-                  <li
-                    key={items.id}
-                    className={`${
-                      active === items.title ? "text-white" : "text-secondary"
-                    } font-poppins text-[16px] font-medium cursor-pointer`}
-                    onClick={() => {
-                      setActive(items.title);
-                      setToggle(!toggle);
-                    }}
-                  >
-                    <a href={`#${items.id}`}>{items.title}</a>
-                  </li>
-                );
-              })}
+              {/* Resume Download (Mobile) */}
+              <li className="text-secondary font-poppins text-[16px] font-medium cursor-pointer hover:text-white">
+                <a
+                  href={resume}
+                  download="Moez_Zakir_Resume.pdf"
+                  onClick={() => setToggle(!toggle)}
+                >
+                  Resume Download ⬇️
+                </a>
+              </li>
+
+              {/* Nav Links */}
+              {navLinks.map((items) => (
+                <li
+                  key={items.id}
+                  className={`${
+                    active === items.title ? "text-white" : "text-secondary"
+                  } font-poppins text-[16px] font-medium cursor-pointer`}
+                  onClick={() => {
+                    setActive(items.title);
+                    setToggle(!toggle);
+                  }}
+                >
+                  <a href={`#${items.id}`}>{items.title}</a>
+                </li>
+              ))}
+
             </ul>
           </div>
         </div>
+
       </div>
     </nav>
   );

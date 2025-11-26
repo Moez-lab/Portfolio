@@ -36,7 +36,9 @@ import tripguide from "./tripguide.png";
 import zomato from "./zomato.jpg";
 import house from "./house.png";
 import face_reg from "./face_reg.png";
-import email_spam from "./email_spam.jpg";
+import email_spam from "./email_spam.jpg"
+import fullsatck from './fullstack.png'
+import mlops from './mlops.png'
 
 export {
   email_spam,
@@ -74,5 +76,7 @@ export {
   jobit,
   tripguide,
   n8n,
-  dockericon
+  dockericon,
+  fullsatck,
+  mlops,
 };

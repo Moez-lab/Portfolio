@@ -31,7 +31,9 @@ import {
   face_reg,
   email_spam,
   n8n,
-  dockericon
+  dockericon,
+  fullsatck,
+  mlops
 } from "../assets";
 
 
@@ -73,8 +75,8 @@ const services = [
     icon: n8n,
   },
   {
-    title:"Docker ",
-    icon: dockericon,
+    title:"MLOPS ",
+    icon: mlops,
   },
 ];
 
@@ -147,42 +149,17 @@ const technologies = [
 
 const experiences = [
   {
-    title: "React.js Developer",
-    company_name: "",
-    icon: react,
-    iconBg: "#383E56",
-    date: "September 2022 - Present",
-    points: [
-      "Developing and maintaining web applications using React.js and other related technologies.",
-      "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-      "Implementing responsive design and ensuring cross-browser compatibility.",
-      "Participating in code reviews and providing constructive feedback to other developers.",
-    ],
-  },
-  {
-    title: "React Native Developer",
-    company_name: "",
-    icon: react,
-    iconBg: "#383E56",
-    date: "Jan 2023 - Present",
-    points: [
-      "Developing and maintaining web applications using React.js and other related technologies.",
-      "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-      "Implementing responsive design and ensuring cross-browser compatibility.",
-      "Participating in code reviews and providing constructive feedback to other developers.",
-    ],
-  },
-  {
     title: "Full stack Developer",
     company_name: "",
-    icon: meta,
+    icon: fullsatck,
     iconBg: "#E6DEDD",
     date: "Jan 2023 - Present",
     points: [
-      "Developing and maintaining web applications using React.js and other related technologies.",
-      "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-      "Implementing responsive design and ensuring cross-browser compatibility.",
-      "Participating in code reviews and providing constructive feedback to other developers.",
+      "Developing and maintaining full-stack web applications using the MERN stack, with strong expertise in React.js, Vite, Vue.js, and Next.js.",
+      "Building high-performance mobile applications using React Native and Expo.",
+      "Collaborating with designers, product managers, and engineering teams to deliver clean, scalable, and user-focused solutions.",
+      "Implementing responsive UI/UX designs and ensuring consistent performance across browsers and devices.",
+      "Conducting code reviews, optimizing code quality, and contributing to best practices in development workflows."
     ],
   },
   {
@@ -192,11 +169,12 @@ const experiences = [
     iconBg: "#383E56",
     date: "Jan 2024 - Present",
     points: [
-      "Developing and maintaining web applications using React.js and related technologies.",
-      "Learning AI from Andrew Ng, including supervised, unsupervised, and deep learning.",
-      "Building AI models for iris detection, email spam detection, house price prediction, and face detection.",
-      "Applying machine learning techniques using TensorFlow and Scikit-learn for real-world projects.",
-    ],
+      "Completed Machine Learning and Deep Learning Specializations by Andrew Ng, covering supervised, unsupervised, and advanced deep learning methods.",
+      "Building AI models for iris detection, email spam detection, house price prediction, and face detection using TensorFlow and Scikit-learn.",
+      "Working with Large Language Models (LLMs) and Generative AI, including fine-tuning, prompt engineering, and model integration.",
+      "Developing and deploying AI services and APIs using FastAPI, integrating ML/LLM workflows into real-world applications.",
+      "Implementing Retrieval-Augmented Generation (RAG) pipelines using LangChain for intelligent, context-aware AI systems."
+    ]
   },
   {
     title: "Computer Vision Specialist",
@@ -226,16 +204,18 @@ const experiences = [
     ],
   },
   {
-    title: "Docker",
+    title: "MLOPS",
     company_name: "",
-    icon: dockericon,
+    icon: mlops,
     iconBg: "#383E56",
     date: "Jan 2025 - Present",
     points: [
-      "Implemented computer vision algorithms to create traffic light detection systems using PCA, YOLO, and image processing techniques.",
-      "Developed skin and nose detection models, enhancing image analysis and recognition accuracy.",
-      "Leveraged depth perception algorithms to enable a computer to determine the proximity of objects.",
-      "Applied advanced image processing methods for feature extraction and object classification.",
+      "Designing and automating end-to-end ML pipelines, including data preprocessing, model training, evaluation, and deployment.",
+      "Implementing CI/CD workflows for machine learning models using tools such as GitHub Actions and Docker.",
+      "Containerizing ML and LLM applications with Docker for scalable and reproducible deployments.",
+      "Monitoring model performance, drift, and data quality to ensure reliable production behavior.",
+      "Managing experiment tracking, versioning, and reproducibility using MLflow and DVC.",
+      "Deploying models and AI services using FastAPI, cloud platforms, and REST-based architectures.",
     ],
   },
 ];
