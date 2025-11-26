@@ -5,6 +5,7 @@ import About from "./components/About";
 import Experience from "./components/Experience";
 import Tech from "./components/Tech";
 import Work from "./components/Work";
+import Contact from "./components/Contact";
 
 export default function App() {
   return (
@@ -17,6 +18,7 @@ export default function App() {
         <Experience/>
         <Tech/>
         <Work/>
+        <Contact/>
       </div>
     </div>
     </BrowserRouter>

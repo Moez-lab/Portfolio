@@ -1,3 +1,4 @@
+import { a } from "framer-motion/client";
 import {
   mobile,
   backend,
@@ -29,6 +30,8 @@ import {
   house,
   face_reg,
   email_spam,
+  n8n,
+  dockericon
 } from "../assets";
 
 
@@ -49,29 +52,30 @@ export const navLinks = [
 
 const services = [
   {
-    title: "Web Developer",
+    title: "Full Stack Web Developer (MERN STACK)",
     icon: web,
   },
   {
-    title: "React Native Developer",
+    title: "Native Expo (Full Stack App Developer)",
     icon: mobile,
   },
-  {
-    title: "Backend Developer",
-    icon: backend,
-  },
-  {
-    title: "Content Creator",
-    icon: creator,
-  },
+
   {
     title:"AI/ML Enthusiast",
     icon: machine,
   },
   {
-    title:"CV Specialist ",
+    title:"ComputerVision Specialist ",
     icon: cv,
-  }
+  },
+  {
+    title:"N8N ",
+    icon: n8n,
+  },
+  {
+    title:"Docker ",
+    icon: dockericon,
+  },
 ];
 
 const technologies = [
@@ -130,6 +134,14 @@ const technologies = [
   {
     name:"AI/ML",
     icon: machine,
+  },
+  {
+    name:"N8N",
+    icon: n8n,
+  },
+  {
+    name:"Docker",
+    icon: dockericon,
   }
 ];
 
@@ -199,6 +211,32 @@ const experiences = [
       "Applied advanced image processing methods for feature extraction and object classification.",
     ],
 
+  },
+  {
+    title: "N8N",
+    company_name: "",
+    icon: n8n,
+    iconBg: "#383E56",
+    date: "Jan 2025 - Present",
+    points: [
+      "Implemented computer vision algorithms to create traffic light detection systems using PCA, YOLO, and image processing techniques.",
+      "Developed skin and nose detection models, enhancing image analysis and recognition accuracy.",
+      "Leveraged depth perception algorithms to enable a computer to determine the proximity of objects.",
+      "Applied advanced image processing methods for feature extraction and object classification.",
+    ],
+  },
+  {
+    title: "Docker",
+    company_name: "",
+    icon: dockericon,
+    iconBg: "#383E56",
+    date: "Jan 2025 - Present",
+    points: [
+      "Implemented computer vision algorithms to create traffic light detection systems using PCA, YOLO, and image processing techniques.",
+      "Developed skin and nose detection models, enhancing image analysis and recognition accuracy.",
+      "Leveraged depth perception algorithms to enable a computer to determine the proximity of objects.",
+      "Applied advanced image processing methods for feature extraction and object classification.",
+    ],
   },
 ];
 

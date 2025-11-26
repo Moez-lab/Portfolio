@@ -1,6 +1,8 @@
 import { motion } from "framer-motion";
 import { styles } from "../style";
-import ComputersCanvas from "./ComputersCanvas";
+import { Link } from "react-router-dom";
+// Import your personal photo here
+import myPhoto from "../assets/cv.png"; 
 
 const Hero = () => {
   return (
@@ -8,25 +10,92 @@ const Hero = () => {
       <div
         className={`${styles.paddingX} absolute inset-0 top-[120px] max-w-7xl mx-auto flex flex-row items-start gap-5`}
       >
+        {/* 1. The Vertical Line & Dot (Left Side) */}
         <div className="flex flex-col justify-center items-center mt-5">
           <div className="w-5 h-5 rounded-full bg-[#915eff]" />
           <div className="w-1 h-40 sm:h-80 violet-gradient" />
         </div>
-        <div>
-          <h1 className={`${styles.heroHeadText} text-white`}>
-            Hi, I'm <span className="text-[#915eff]">Moez</span>
-          </h1>
-          <p className={`${styles.heroSubText} mt-2 text-white-100`}>
-            I develop 3D visuals, user interfaces, and web applications.
-          </p>
+
+        {/* 2. Main Content Container (Splits into Text and Image) */}
+        <div className="w-full flex lg:flex-row flex-col gap-10">
+          
+          {/* A. Text Section */}
+          <div className="flex-1">
+            <h1 className={`${styles.heroHeadText} text-white`}>
+              Hi, I'm <span className="text-[#915eff]">Moez</span>
+            </h1>
+            <p className={`${styles.heroSubText} mt-2 text-white-100`}>
+              I am a Full Stack Web/App Developer <br /> AI/ML Engineer <br /> LLM
+              Integrator
+            </p>
+
+            {/* Social Icons */}
+            <div className="flex justify-start gap-10 items-center mt-10">
+              <a
+                className="flex flex-col justify-center items-center hover:scale-110 transition-transform"
+                href="https://github.com/Moez-lab"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <img
+                  className="h-10 w-10"
+                  src="./src/assets/github.png"
+                  alt="Github"
+                />
+                <p className="text-white text-[14px] mt-1">Github</p>
+              </a>
+
+              <a
+                className="flex flex-col justify-center items-center hover:scale-110 transition-transform"
+                href="https://www.linkedin.com/in/moezzakir/"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <img
+                  className="h-10 w-10"
+                  src="./src/assets/linkedin.png"
+                  alt="Linkedin"
+                />
+                <p className="text-white text-[14px] mt-1">Linkedin</p>
+              </a>
+
+              <a
+                className="flex flex-col justify-center items-center hover:scale-110 transition-transform"
+                href="https://github.com/Moez-lab"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <img
+                  className="h-10 w-10"
+                  src="./src/assets/resumeDownloadIcon.png"
+                  alt="Resume"
+                />
+                <p className="text-white text-[14px] mt-1 text-center">
+                  Resume
+                </p>
+              </a>
+            </div>
+          </div>
+
+          {/* B. Image Section (Right Side) */}
+          <div className="flex-1 flex justify-center items-center relative">
+            {/* Optional: Add a glow effect behind the image */}
+            <div className="absolute z-0 w-[40%] h-[35%] top-0 pink__gradient" />
+            
+            <img 
+                src={myPhoto} 
+                alt="Moez" 
+                className="w-[80%] h-auto object-contain rounded-2xl z-10 border-2 border-secondary/20 shadow-card"
+            />
+          </div>
+
         </div>
       </div>
 
-      {/* Computer 3D Model */}
-      <ComputersCanvas/>
-      <div className="absolute w-full  xs:bottom-[10px] bottom-28 2-full flex justify-center items-center">
+      {/* Scroll Down Animation */}
+      <div className="absolute w-full xs:bottom-[10px] bottom-10 flex justify-center items-center">
         <a href="#about">
-          <div className="w-[35px] h-[57px] rounded-3xl border-4 border-secondary flex justify-center items-start p-2">
+          <div className="w-[35px] h-[64px] rounded-3xl border-4 border-secondary flex justify-center items-start p-2">
             <motion.div
               animate={{
                 y: [0, 24, 0],
@@ -37,7 +106,7 @@ const Hero = () => {
                 repeatType: "loop",
               }}
               className="w-3 h-3 rounded-full bg-secondary mb-1"
-            />  
+            />
           </div>
         </a>
       </div>
