@@ -39,8 +39,10 @@ import face_reg from "./face_reg.png";
 import email_spam from "./email_spam.jpg"
 import fullsatck from './fullstack.png'
 import mlops from './mlops.png'
+import nocode from './nocode.png'
 
 export {
+  nocode,
   email_spam,
   face_reg,
   house,

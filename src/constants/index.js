@@ -33,7 +33,8 @@ import {
   n8n,
   dockericon,
   fullsatck,
-  mlops
+  mlops,
+  nocode
 } from "../assets";
 
 
@@ -71,8 +72,8 @@ const services = [
     icon: cv,
   },
   {
-    title:"N8N ",
-    icon: n8n,
+    title:"No/Low-code ",
+    icon: nocode,
   },
   {
     title:"MLOPS ",
@@ -191,16 +192,16 @@ const experiences = [
 
   },
   {
-    title: "N8N",
+    title: "No/Low-Code",
     company_name: "",
     icon: n8n,
     iconBg: "#383E56",
     date: "Jan 2025 - Present",
     points: [
-      "Implemented computer vision algorithms to create traffic light detection systems using PCA, YOLO, and image processing techniques.",
-      "Developed skin and nose detection models, enhancing image analysis and recognition accuracy.",
-      "Leveraged depth perception algorithms to enable a computer to determine the proximity of objects.",
-      "Applied advanced image processing methods for feature extraction and object classification.",
+      "Automated workflows and integrations using n8n, enabling seamless data transfer between apps and services without extensive coding.",
+      "Implemented AI-powered content and voice solutions leveraging ElevenLabs and VAPI to enhance multimedia experiences and streamline processes.",
+      "Optimized customer and business operations through CRM platforms, automating routine tasks and improving data driven decision making.",
+      "Combined low-code tools with AI and automation to rapidly prototype solutions, reduce development time, and improve operational efficiency."
     ],
   },
   {
@@ -210,7 +211,7 @@ const experiences = [
     iconBg: "#383E56",
     date: "Jan 2025 - Present",
     points: [
-      "Designing and automating end-to-end ML pipelines, including data preprocessing, model training, evaluation, and deployment.",
+      "Designing and automating end to end ML pipelines, including data preprocessing, model training, evaluation, and deployment.",
       "Implementing CI/CD workflows for machine learning models using tools such as GitHub Actions and Docker.",
       "Containerizing ML and LLM applications with Docker for scalable and reproducible deployments.",
       "Monitoring model performance, drift, and data quality to ensure reliable production behavior.",
