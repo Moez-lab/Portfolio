@@ -36,15 +36,15 @@ const ServiceCard = ({ index, title, icon }) => {
 const About = () => {
   return (
     <>
-     <motion.div 
-        variants={textVariant()} 
-        initial="hidden" 
-        whileInView="show" 
+      <motion.div
+        variants={textVariant()}
+        initial="hidden"
+        whileInView="show"
         viewport={{ once: true, amount: 0.1 }} // Trigger as soon as 10% of the element is in view
-        >
-          <p className={styles.sectionSubText}>Introduction</p>
-          <h2 className={styles.sectionHeadText}>Overview</h2>
-     </motion.div>
+      >
+        <p className={styles.sectionSubText}>Introduction</p>
+        <h2 className={styles.sectionHeadText}>Overview</h2>
+      </motion.div>
 
 
       <motion.p
