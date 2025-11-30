@@ -4,6 +4,9 @@ import { Link } from "react-router-dom";
 // Import your personal photo here
 import myPhoto from "../assets/pfpic.png";
 import resume from "../assets/resume.pdf";
+import github from "../assets/github.png";
+import linkedin from "../assets/linkedin.png";
+import resumeIcon from "../assets/resumeDownloadIcon.png";
 
 
 const Hero = () => {
@@ -41,7 +44,7 @@ const Hero = () => {
                             >
                                 <img
                                     className="h-10 w-10"
-                                    src="./src/assets/github.png"
+                                    src={github}
                                     alt="Github"
                                 />
                                 <p className="text-white text-[14px] mt-1">Github</p>
@@ -55,7 +58,7 @@ const Hero = () => {
                             >
                                 <img
                                     className="h-10 w-10"
-                                    src="./src/assets/linkedin.png"
+                                    src={linkedin}
                                     alt="Linkedin"
                                 />
                                 <p className="text-white text-[14px] mt-1">Linkedin</p>
@@ -70,7 +73,7 @@ const Hero = () => {
                             >
                                 <img
                                     className="h-10 w-10"
-                                    src="./src/assets/resumeDownloadIcon.png"
+                                    src={resumeIcon}
                                     alt="Resume"
                                 />
                                 <p className="text-white text-[14px] mt-1 text-center">
