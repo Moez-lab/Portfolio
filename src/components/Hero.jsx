@@ -30,7 +30,7 @@ const Hero = () => {
                             Hi, I'm <span className="text-[#915eff]">Moez</span>
                         </h1>
                         <p className={`${styles.heroSubText} mt-2 text-white-100`}>
-                            I am ja Full Stack Web/App Developer <br /> AI/ML Engineer <br /> LLM
+                            I am a Full Stack Web/App Developer <br /> AI/ML Engineer <br /> LLM
                             Integrator
                         </p>
 
