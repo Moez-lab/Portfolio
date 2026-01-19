@@ -174,5 +174,3 @@ This project is open source and available under the [MIT License](LICENSE).
 ---
 
 ⭐ **If you find this portfolio helpful, please consider giving it a star!**
-
-Built with ❤️ by Moez Zakir
