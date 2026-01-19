@@ -1,5 +1,6 @@
 import { a } from "framer-motion/client";
 import {
+  jarvis,
   mobile,
   backend,
   creator,
@@ -249,6 +250,15 @@ const testimonials = [
 ];
 
 const projects = [
+  { name: "AI Assistant", 
+    description: "A versatile virtual assistant developed with Python to automate daily tasks and streamline user interaction. Features include real-time voice command recognition, intelligent web scraping for information retrieval, and integration with generative AI models for dynamic content creation and query handling.", 
+    tags: [ 
+      { name: "Python", color: "blue-text-gradient", }, 
+      { name: "OpenAI", color: "green-text-gradient", }, 
+      { name: "Automation", color: "pink-text-gradient", }, 
+    ], 
+    image: jarvis, 
+    source_code_link: "https://github.com/Moez-lab/AI-Assistant", },
   {
     name: "Zomato App", 
     description:

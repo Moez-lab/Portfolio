@@ -40,8 +40,10 @@ import email_spam from "./email_spam.jpg"
 import fullsatck from './fullstack.png'
 import mlops from './mlops.png'
 import nocode from './nocode.png'
+import jarvis from './jarvis.png'
 
 export {
+  jarvis,
   nocode,
   email_spam,
   face_reg,
