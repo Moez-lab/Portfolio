@@ -65,19 +65,19 @@ const services = [
   },
 
   {
-    title:"AI/ML Enthusiast",
+    title: "AI/ML Enthusiast",
     icon: machine,
   },
   {
-    title:"ComputerVision Specialist ",
+    title: "ComputerVision Specialist ",
     icon: cv,
   },
   {
-    title:"No/Low-code ",
+    title: "No/Low-code ",
     icon: nocode,
   },
   {
-    title:"MLOPS ",
+    title: "MLOPS ",
     icon: mlops,
   },
 ];
@@ -136,15 +136,15 @@ const technologies = [
     icon: cv,
   },
   {
-    name:"AI/ML",
+    name: "AI/ML",
     icon: machine,
   },
   {
-    name:"N8N",
+    name: "N8N",
     icon: n8n,
   },
   {
-    name:"Docker",
+    name: "Docker",
     icon: dockericon,
   }
 ];
@@ -250,17 +250,21 @@ const testimonials = [
 ];
 
 const projects = [
-  { name: "AI Assistant", 
-    description: "A versatile virtual assistant developed with Python to automate daily tasks and streamline user interaction. Features include real-time voice command recognition, intelligent web scraping for information retrieval, and integration with generative AI models for dynamic content creation and query handling.", 
-    tags: [ 
-      { name: "Python", color: "blue-text-gradient", }, 
-      { name: "OpenAI", color: "green-text-gradient", }, 
-      { name: "Automation", color: "pink-text-gradient", }, 
-    ], 
-    image: jarvis, 
-    source_code_link: "https://github.com/Moez-lab/AI-Assistant", },
   {
-    name: "Zomato App", 
+    name: "JARVIS AI Assistant",
+    description: "Advanced AI assistant featuring a stunning 3D avatar interface with real-time lip-sync animations powered by React Three Fiber. Integrates YOLOv8 for 80+ object detection, DeepFace for face recognition and emotion detection, neural TTS with voice synthesis, and real-time face tracking. Built with Python backend and WebSocket communication for synchronized avatar responses. Includes desktop automation, voice command recognition, and intelligent visual analysis capabilities.",
+    tags: [
+      { name: "React Three Fiber", color: "blue-text-gradient", },
+      { name: "YOLOv8", color: "green-text-gradient", },
+      { name: "Ollama", color: "pink-text-gradient", },
+      { name: "Selenium", color: "blue-text-gradient", },
+      { name: "PyAutoGUI", color: "green-text-gradient", },
+    ],
+    image: jarvis,
+    source_code_link: "https://github.com/Moez-lab/AI-Assistant",
+  },
+  {
+    name: "Zomato App",
     description:
       "A cross-platform mobile application that replicates the core functionalities of the Zomato food delivery experience. Built using React Native with Expo for fast development and deployment, Supabase as the backend-as-a-service for authentication, and Redux Toolkit for efficient global state management.",
     tags: [
@@ -277,7 +281,7 @@ const projects = [
         color: "pink-text-gradient",
       },
     ],
-    image:  zomato,
+    image: zomato,
     source_code_link: "https://github.com/Moez-lab/Zomato-Food-App",
   },
   {
