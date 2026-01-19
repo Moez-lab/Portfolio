@@ -52,7 +52,7 @@ const About = () => {
         className={`${styles.sectionSubText} mt-4 text-secondary text-[17px] max-w-3xl leading-[30px]`}
         viewport={{ once: true, amount: 0.3 }} // Adjusted viewport trigger
       >
-        I am an AI/ML Engineer specializing in generative AI, deep learning, computer vision, and NLP. Proficient in Python, TensorFlow, Hugging Face, OpenCV, and data engineering tools like Pandas and SQL, I develop intelligent systems that solve real-world problems. I have built projects such as an AI-based face recognition attendance system and have experience deploying models using FastAPI and Docker. Passionate about pushing the boundaries of AI, I am focused on advancing my expertise in generative AI and creating innovative, practical solutions.
+        I am an AI/ML Engineer and LLM integrator specializing in generative AI, deep learning, computer vision, and NLP. Proficient in Python, TensorFlow, Hugging Face, OpenCV, n8n, and data engineering tools like Pandas and SQL, I develop intelligent systems that solve real-world problems. I have built projects such as an AI-based face recognition attendance system and have experience deploying models using FastAPI and Docker. Passionate about pushing the boundaries of AI, I am focused on advancing my expertise in generative AI and creating innovative, practical solutions.
       </motion.p>
 
       <div className="mt-20 flex flex-wrap gap-10">

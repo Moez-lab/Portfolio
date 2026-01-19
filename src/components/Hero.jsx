@@ -68,7 +68,6 @@ const Hero = () => {
                                 className="flex flex-col justify-center items-center hover:scale-110 transition-transform"
                                 href={resume}
                                 target="_blank"
-                                download="Moez_Zakir_Resume.pdf"
                                 rel="noopener noreferrer"
                             >
                                 <img

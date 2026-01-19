@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 import { styles } from "../style";
 import { navLinks } from "../constants";
 import { logo, menu, close } from "../assets";
-import resume from "../assets/resume.pdf"; 
+import resume from "../assets/resume.pdf";
 
 const Navbar = () => {
   const [active, setActive] = useState("");
@@ -14,7 +14,7 @@ const Navbar = () => {
       className={`${styles.paddingX} w-full flex items-center py-5 fixed top-0 z-20 bg-primary`}
     >
       <div className="w-full flex justify-between items-center max-w-7xl mx-auto">
-        
+
         {/* Logo + Home Link */}
         <Link
           to={"/"}
@@ -35,9 +35,8 @@ const Navbar = () => {
           {navLinks.map((items) => (
             <li
               key={items.id}
-              className={`${
-                active === items.title ? "text-white" : "text-secondary"
-              } hover:text-white text-[18px] font-medium cursor-pointer`}
+              className={`${active === items.title ? "text-white" : "text-secondary"
+                } hover:text-white text-[18px] font-medium cursor-pointer`}
               onClick={() => setActive(items.title)}
             >
               <a href={`#${items.id}`}>{items.title}</a>
@@ -55,10 +54,17 @@ const Navbar = () => {
             </a>
           </li>
 
+          {/* Resume View (Desktop) */}
+          <li className="text-secondary hover:text-white text-[18px] font-medium cursor-pointer">
+            <a href={resume} target="_blank" rel="noopener noreferrer">
+              View Resume
+            </a>
+          </li>
+
           {/* Resume Download (Desktop) */}
           <li className="text-secondary hover:text-white text-[18px] font-medium cursor-pointer">
             <a href={resume} download="Moez_Zakir_Resume.pdf">
-              Resume Download ⬇️
+              Download Resume ⬇️
             </a>
           </li>
         </ul>
@@ -73,9 +79,8 @@ const Navbar = () => {
           />
 
           <div
-            className={`${
-              !toggle ? "hidden" : "flex"
-            } p-6 black-gradient absolute z-10 top-20 right-0 mx-4 my-2 min-w-[140px] rounded-xl`}
+            className={`${!toggle ? "hidden" : "flex"
+              } p-6 black-gradient absolute z-10 top-20 right-0 mx-4 my-2 min-w-[140px] rounded-xl`}
           >
             <ul className="list-none flex flex-col gap-4 justify-end items-center">
 
@@ -91,6 +96,18 @@ const Navbar = () => {
                 </a>
               </li>
 
+              {/* Resume View (Mobile) */}
+              <li className="text-secondary font-poppins text-[16px] font-medium cursor-pointer hover:text-white">
+                <a
+                  href={resume}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  onClick={() => setToggle(!toggle)}
+                >
+                  View Resume
+                </a>
+              </li>
+
               {/* Resume Download (Mobile) */}
               <li className="text-secondary font-poppins text-[16px] font-medium cursor-pointer hover:text-white">
                 <a
@@ -98,7 +115,7 @@ const Navbar = () => {
                   download="Moez_Zakir_Resume.pdf"
                   onClick={() => setToggle(!toggle)}
                 >
-                  Resume Download ⬇️
+                  Download Resume ⬇️
                 </a>
               </li>
 
@@ -106,9 +123,8 @@ const Navbar = () => {
               {navLinks.map((items) => (
                 <li
                   key={items.id}
-                  className={`${
-                    active === items.title ? "text-white" : "text-secondary"
-                  } font-poppins text-[16px] font-medium cursor-pointer`}
+                  className={`${active === items.title ? "text-white" : "text-secondary"
+                    } font-poppins text-[16px] font-medium cursor-pointer`}
                   onClick={() => {
                     setActive(items.title);
                     setToggle(!toggle);
