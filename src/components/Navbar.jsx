@@ -54,12 +54,6 @@ const Navbar = () => {
             </a>
           </li>
 
-          {/* Resume View (Desktop) */}
-          <li className="text-secondary hover:text-white text-[18px] font-medium cursor-pointer">
-            <a href={resume} target="_blank" rel="noopener noreferrer">
-              View Resume
-            </a>
-          </li>
 
           {/* Resume Download (Desktop) */}
           <li className="text-secondary hover:text-white text-[18px] font-medium cursor-pointer">
@@ -96,17 +90,6 @@ const Navbar = () => {
                 </a>
               </li>
 
-              {/* Resume View (Mobile) */}
-              <li className="text-secondary font-poppins text-[16px] font-medium cursor-pointer hover:text-white">
-                <a
-                  href={resume}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  onClick={() => setToggle(!toggle)}
-                >
-                  View Resume
-                </a>
-              </li>
 
               {/* Resume Download (Mobile) */}
               <li className="text-secondary font-poppins text-[16px] font-medium cursor-pointer hover:text-white">
