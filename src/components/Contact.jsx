@@ -28,6 +28,12 @@ const Contact = () => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
+
+    if (!form.email.trim() || !form.message.trim()) {
+      alert("Please provide both your email and a message.");
+      return;
+    }
+
     setLoading(true);
 
     // --- 1. SEND TO EMAIL (Via EmailJS) ---
