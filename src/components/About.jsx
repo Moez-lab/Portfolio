@@ -52,7 +52,16 @@ const About = () => {
         className={`${styles.sectionSubText} mt-4 text-secondary text-[17px] max-w-3xl leading-[30px]`}
         viewport={{ once: true, amount: 0.3 }} // Adjusted viewport trigger
       >
-        I am an AI/ML Engineer and LLM integrator specializing in generative AI, deep learning, computer vision, and NLP. Proficient in Python, TensorFlow, Hugging Face, OpenCV, n8n, and data engineering tools like Pandas and SQL, I develop intelligent systems that solve real-world problems. I have built projects such as an AI-based face recognition attendance system and have experience deploying models using FastAPI and Docker. Passionate about pushing the boundaries of AI, I am focused on advancing my expertise in generative AI and creating innovative, practical solutions.
+        AI Engineer & MERN Stack Developer<br />
+          I turn data and algorithms into smart, production-ready applications. With a strong foundation in Machine Learning, Deep Learning, and Computer Vision, I specialise in taking AI out of the research phase and integrating it into intuitive, scalable software using the MERN stack.<br />
+
+          <br />What I do:<br />
+          • AI & Computer Vision: Real-time object detection, face recognition, and generative 3D modelling/animation.<br />
+          • Full-Stack Engineering: Building clean, robust architectures (MongoDB, Express, React, Node.js) that allow ML models to shine in the real world.<br />
+          • Current Focus: Model deployment pipelines, real-time inference, and responsible AI.<br /> 
+          <br /> Whether it's engineering a personalised AI agent or building scalable web solutions from scratch, I am driven by the impact of intelligent software.<br />
+
+          <br/>Let's connect if you're talking about AI deployment, computer vision, or building the next generation of smart apps!
       </motion.p>
 
       <div className="mt-20 flex flex-wrap gap-10">
