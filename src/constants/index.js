@@ -1,11 +1,12 @@
-import { a } from "framer-motion/client";
 import {
+  haystackIcon,
+  langsmithicon,
+  langgraphIcon,  
+  langchainIcons,
   jarvis,
   mobile,
-  backend,
-  creator,
   web,
-  javascript,
+  javascriptIcon,
   typescript,
   html,
   css,
@@ -16,15 +17,7 @@ import {
   mongodb,
   git,
   figma,
-  docker,
-  meta,
-  react,
-  tesla,
-  shopify,
   cv,
-  carrent,
-  jobit,
-  tripguide,
   threejs,
   machine,
   zomato,
@@ -93,7 +86,7 @@ const technologies = [
   },
   {
     name: "JavaScript",
-    icon: javascript,
+    icon: javascriptIcon,
   },
   {
     name: "TypeScript",
@@ -146,8 +139,25 @@ const technologies = [
   {
     name: "Docker",
     icon: dockericon,
+  },
+  {
+    name: "Langchain",
+    icon: langchainIcons,
+  },
+  {
+    name: "Langsmith",
+    icon: langsmithicon,
+  },
+  {
+    name: "Langgraph",
+    icon: langgraphIcon,
+  },
+  {
+    name: "Haystack",
+    icon: haystackIcon,
   }
 ];
+
 
 const experiences = [
   {

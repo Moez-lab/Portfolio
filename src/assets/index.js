@@ -14,7 +14,7 @@ import docker from "./tech/docker.png";
 import figma from "./tech/figma.png";
 import git from "./tech/git.png";
 import html from "./tech/html.png";
-import javascript from "./tech/javascript.png";
+import javascriptIcon from "./tech/javascriptIcon.png";
 import mongodb from "./tech/mongodb.png";
 import nodejs from "./tech/nodejs.png";
 import reactjs from "./tech/reactjs.png";
@@ -24,6 +24,10 @@ import typescript from "./tech/typescript.png";
 import threejs from "./tech/threejs.svg";
 import n8n from './tech/n8n-icon.png'
 import dockericon from './tech/docker-icon.png'
+import langchainIcons from './tech/langchainIcon.png'
+import langsmithicon from './tech/langsmithIcon.png'
+import langgraphIcon from './tech/langgraphIcon.png'
+import haystackIcon from './tech/haystackIcon.png'
 
 import meta from "./company/meta.png";
 import shopify from "./company/shopify.png";
@@ -43,6 +47,10 @@ import nocode from './nocode.png'
 import jarvis from './jarvis.png'
 
 export {
+  haystackIcon,
+  langgraphIcon,
+  langsmithicon,
+  langchainIcons,
   jarvis,
   nocode,
   email_spam,
@@ -64,7 +72,7 @@ export {
   figma,
   git,
   html,
-  javascript,
+  javascriptIcon,
   mongodb,
   nodejs,
   reactjs,
