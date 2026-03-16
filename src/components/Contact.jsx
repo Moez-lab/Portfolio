@@ -1,5 +1,4 @@
 import React, { useRef, useState } from "react";
-// eslint-disable-next-line no-unused-vars
 import { motion } from "framer-motion";
 import emailjs from "@emailjs/browser";
 
@@ -7,7 +6,7 @@ import { styles } from "../style";
 import { SectionWrapper } from "../hoc";
 import { slideIn } from "../utils/motion";
 
-const Contact = () => {
+function Contact() {
   const formRef = useRef();
   const [form, setForm] = useState({
     name: "",
@@ -138,6 +137,7 @@ const Contact = () => {
       </motion.div>
     </div>
   );
-};
+}
 
-export default SectionWrapper(Contact, "contact");
+const ContactSection = SectionWrapper(Contact, "contact");
+export default ContactSection;

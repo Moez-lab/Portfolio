@@ -3,7 +3,7 @@ import { BrowserRouter } from "react-router-dom";
 
 import Navbar from "./components/Navbar";
 import Hero from "./components/Hero";
-import Loader from "./components/Loader";
+import PageLoader from "./components/PageLoader";
 
 // Lazy load heavy components
 const About = lazy(() => import("./components/About"));
@@ -19,7 +19,7 @@ export default function App() {
         <div className="bg-hero-pattern bg-cover bg-no-repeat bg-center">
           <Navbar />
           <Hero />
-          <Suspense fallback={<Loader />}>
+          <Suspense fallback={<PageLoader />}>
             <About />
             <Experience />
             <Tech />
