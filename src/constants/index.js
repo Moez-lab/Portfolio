@@ -1,7 +1,8 @@
 import {
+  Eweb,
   haystackIcon,
   langsmithicon,
-  langgraphIcon,  
+  langgraphIcon,
   langchainIcons,
   jarvis,
   mobile,
@@ -260,6 +261,20 @@ const testimonials = [
 ];
 
 const projects = [
+  {
+    name: "E-Commerce Website",
+    description: "E-Commerce Website",
+    tags: [
+      { name: "LangChain", color: "blue-text-gradient" },
+      { name: "Langsmith", color: "green-text-gradient" },
+      { name: "Pinecone", color: "pink-text-gradient" },
+      { name: "Kafka", color: "blue-text-gradient" },
+      { name: "Docker", color: "green-text-gradient" },
+      { name: "PostgreSQL", color: "pink-text-gradient" },
+    ],
+    image: Eweb,
+    source_code_link: "https://github.com/Moez-lab/AI-Base-Ecommerce.git",
+  },
   {
     name: "JARVIS AI Assistant",
     description: "Advanced AI assistant featuring a stunning 3D avatar interface with real-time lip-sync animations powered by React Three Fiber. Integrates YOLOv8 for 80+ object detection, DeepFace for face recognition and emotion detection, neural TTS with voice synthesis, and real-time face tracking. Built with Python backend and WebSocket communication for synchronized avatar responses. Includes desktop automation, voice command recognition, and intelligent visual analysis capabilities.",

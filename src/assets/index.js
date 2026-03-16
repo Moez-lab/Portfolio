@@ -33,6 +33,7 @@ import meta from "./company/meta.png";
 import shopify from "./company/shopify.png";
 import react from "./company/reactjs.png";
 import tesla from "./company/tesla.png";
+import Eweb from './Eweb.png'
 
 import carrent from "./carrent.png";
 import jobit from "./jobit.png";
@@ -47,6 +48,7 @@ import nocode from './nocode.png'
 import jarvis from './jarvis.png'
 
 export {
+  Eweb,
   haystackIcon,
   langgraphIcon,
   langsmithicon,
