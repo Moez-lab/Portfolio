@@ -29,14 +29,13 @@ export default function ComputersCanvas() {
   5;
   const cameraPosition = isMobile ? [10, 2, 3] : [20, 3, 5];
   const modelPosition = isMobile ? [0, -1, 0] : [0, -3.3, 0];
-  const orbitZoom = !isMobile; // enable zoom on desktop, disable on mobile
   const rotation= !isMobile ? [0, -4.55, 0] : [0, Math.PI / 2, 0];
 
   return (
     <Canvas
       frameloop="demand"
       shadows
-      dpr={[3.5, 3.5]} // reduce dpr on mobile for performance
+      dpr={[1, 2]} // reduce dpr for better performance on high-DPI screens
       camera={{ position: cameraPosition, fov: 25 }}
       gl={{ antialias: true, preserveDrawingBuffer: true }}
       className="absolute inset-0 w-full h-full"
