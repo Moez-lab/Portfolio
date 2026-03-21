@@ -4,6 +4,7 @@ import { BrowserRouter } from "react-router-dom";
 import Navbar from "./components/Navbar";
 import Hero from "./components/Hero";
 import PageLoader from "./components/PageLoader";
+import Footer from "./components/Footer";
 
 // Lazy load heavy components
 const About = lazy(() => import("./components/About"));
@@ -26,6 +27,7 @@ export default function App() {
             <Work />
             <Contact />
           </Suspense>
+          <Footer />
         </div>
       </div>
     </BrowserRouter>
