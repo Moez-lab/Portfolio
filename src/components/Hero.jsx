@@ -16,13 +16,13 @@ const Hero = () => {
                 className={`${styles.paddingX} absolute inset-0 top-[120px] max-w-7xl mx-auto flex flex-row items-start gap-5`}
             >
                 {/* 1. The Vertical Line & Dot (Left Side) */}
-                <div className="flex flex-col justify-center items-center mt-5">
+                <div className="flex flex-col justify-center items-center mt-5 sm:static absolute left-5">
                     <div className="w-5 h-5 rounded-full bg-[#915eff]" />
                     <div className="w-1 h-40 sm:h-80 violet-gradient" />
                 </div>
 
                 {/* 2. Main Content Container (Splits into Text and Image) */}
-                <div className="w-full flex lg:flex-row flex-col gap-10">
+                <div className="w-full flex lg:flex-row flex-col items-center lg:items-start gap-10">
 
                     {/* A. Text Section */}
                     <div className="flex-1">
@@ -35,7 +35,7 @@ const Hero = () => {
                         </p>
 
                         {/* Social Icons */}
-                        <div className="flex justify-start gap-10 items-center mt-10">
+                        <div className="flex justify-center lg:justify-start gap-10 items-center mt-10">
                             <a
                                 className="flex flex-col justify-center items-center hover:scale-110 transition-transform"
                                 href="https://github.com/Moez-lab"
