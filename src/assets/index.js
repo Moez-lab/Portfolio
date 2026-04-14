@@ -30,15 +30,8 @@ import langsmithicon from './tech/langsmithIcon.png'
 import langgraphIcon from './tech/langgraphIcon.png'
 import haystackIcon from './tech/haystackIcon.png'
 
-import meta from "./company/meta.png";
-import shopify from "./company/shopify.png";
-import react from "./company/reactjs.png";
-import tesla from "./company/tesla.png";
 import Eweb from './Eweb.png'
 
-import carrent from "./carrent.png";
-import jobit from "./jobit.png";
-import tripguide from "./tripguide.png";
 import zomato from "./zomato.jpg";
 import house from "./house.png";
 import face_reg from "./face_reg.png";
@@ -84,13 +77,6 @@ export {
   tailwind,
   typescript,
   threejs,
-  meta,
-  shopify,
-  react,
-  tesla,
-  carrent,
-  jobit,
-  tripguide,
   n8n,
   dockericon,
   fullsatck,
