@@ -11,7 +11,7 @@ const ServiceCard = ({ index, title, icon }) => {
       <motion.div
         variants={fadeIn('right', 'spring', index * 0.25, 0.5)}
         className="w-full green-pink-gradient p-[1px] rounded-[20px] shadow-card"
-        viewport={{ once: true, amount: 0.3 }} // Trigger earlier and only once
+        viewport={{ once: true, amount: 0 }} // Trigger earlier and only once
       >
         <div
           options={{
@@ -40,7 +40,7 @@ const About = () => {
         variants={textVariant()}
         initial="hidden"
         whileInView="show"
-        viewport={{ once: true, amount: 0.1 }} // Trigger as soon as 10% of the element is in view
+        viewport={{ once: true, amount: 0 }} // Trigger as soon as the element is in view
       >
         <p className={styles.sectionSubText}>Introduction</p>
         <h2 className={styles.sectionHeadText}>Overview</h2>
@@ -50,7 +50,7 @@ const About = () => {
       <motion.p
         variants={fadeIn('', '', 0.05, 0.55)}
         className={`${styles.sectionSubText} mt-4 text-secondary text-[17px] max-w-3xl leading-[30px]`}
-        viewport={{ once: true, amount: 0.3 }} // Adjusted viewport trigger
+        viewport={{ once: true, amount: 0 }} // Adjusted viewport trigger
       >
         AI Engineer & MERN Stack Developer<br />
           I turn data and algorithms into smart, production-ready applications. With a strong foundation in Machine Learning, Deep Learning, and Computer Vision, I specialise in taking AI out of the research phase and integrating it into intuitive, scalable software using the MERN stack.<br />
