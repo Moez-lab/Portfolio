@@ -16,7 +16,7 @@ const Contact = lazy(() => import("./components/Contact"));
 export default function App() {
   return (
     <BrowserRouter>
-      <div className="relative z-0 bg-primary">
+      <div className="relative z-0 bg-primary overflow-hidden">
         <div className="bg-hero-pattern bg-cover bg-no-repeat bg-center">
           <Navbar />
           <Hero />
