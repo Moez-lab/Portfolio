@@ -22,7 +22,7 @@ const TechItem = ({ index, name, icon }) => {
         }}
       >
         <div className='w-16 h-16 object-contain flex items-center justify-center'>
-          <img src={icon} alt={name} className='w-12 h-12 object-contain filter drop-shadow-[0_0_8px_rgba(255,255,255,0.3)]' />
+          <img src={icon} alt={name} className='w-14 h-14 object-contain' />
         </div>
         <p className='text-white text-[14px] font-bold text-center mt-3 tracking-wider'>
           {name}

@@ -1,16 +1,10 @@
 import {
   Eweb,
   haystackIcon,
-  langsmithicon,
-  langgraphIcon,
   langchainIcons,
   jarvis,
   mobile,
   web,
-  javascriptIcon,
-  typescript,
-  html,
-  css,
   reactjs,
   redux,
   tailwind,
@@ -77,22 +71,6 @@ const services = [
 ];
 
 const technologies = [
-  // {
-  //   name: "HTML 5",
-  //   icon: html,
-  // },
-  // {
-  //   name: "CSS 3",
-  //   icon: css,
-  // },
-  // {
-  //   name: "JavaScript",
-  //   icon: javascriptIcon,
-  // },
-  // {
-  //   name: "TypeScript",
-  //   icon: typescript,
-  // },
   {
     name: "React JS",
     icon: reactjs,
@@ -142,16 +120,8 @@ const technologies = [
     icon: dockericon,
   },
   {
-    name: "Langchain",
+    name: "Lang framework",
     icon: langchainIcons,
-  },
-  {
-    name: "Langsmith",
-    icon: langsmithicon,
-  },
-  {
-    name: "Langgraph",
-    icon: langgraphIcon,
   },
   {
     name: "Haystack",

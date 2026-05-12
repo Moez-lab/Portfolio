@@ -49,19 +49,18 @@ const About = () => {
 
       <motion.p
         variants={fadeIn('', '', 0.05, 0.55)}
-        className={`${styles.sectionSubText} mt-4 text-secondary text-[17px] max-w-3xl leading-[30px]`}
+        className={`${styles.sectionSubText} mt-4 text-secondary text-[17px] max-w-3xl leading-[50px]`}
         viewport={{ once: true, amount: 0 }} // Adjusted viewport trigger
       >
-        AI Engineer & MERN Stack Developer<br />
-          I turn data and algorithms into smart, production-ready applications. With a strong foundation in Machine Learning, Deep Learning, and Computer Vision, I specialise in taking AI out of the research phase and integrating it into intuitive, scalable software using the MERN stack.<br />
+        <b>AI Engineer & MERN Stack Developer</b><br />
+        I turn data and algorithms into smart, production-ready applications. With a strong foundation in AI Integration, Machine Learning, Deep Learning, and Computer Vision, I specialise in taking AI out of the research phase and integrating it into intuitive, scalable software.<br />
 
-          <br />What I do:<br />
-          • AI & Computer Vision: Real-time object detection, face recognition, and generative 3D modelling/animation.<br />
-          • Full-Stack Engineering: Building clean, robust architectures (MongoDB, Express, React, Node.js) that allow ML models to shine in the real world.<br />
-          • Current Focus: Model deployment pipelines, real-time inference, and responsible AI.<br /> 
-          <br /> Whether it's engineering a personalised AI agent or building scalable web solutions from scratch, I am driven by the impact of intelligent software.<br />
+        <br /><b>What I do:</b> <br />
+        <b>• AI & Computer Vision:</b> Real-time object detection, face recognition, LLM integration, NLP, Generative AI, image processing, Agentic AI, Multimodal AI <br />
+        <b>• Full-Stack Engineering:</b> Building clean, robust architectures that allow models to shine in the real world.<br />
+        <b>• Current Focus:</b> Model deployment pipelines, real-time inference,responsible/agentic and generative AI.<br />
 
-          <br/>Let's connect if you're talking about AI deployment, computer vision, or building the next generation of smart apps!
+        <br /> Let's connect if you're talking about AI deployment/integration, ML, or building the next generation of smart apps and webs!
       </motion.p>
 
       <div className="mt-20 flex flex-wrap gap-10">

@@ -10,24 +10,19 @@ import close from "./close.svg";
 import machine from "./machine.png";
 import cv from "./cv.png";
 
-import css from "./tech/css.png";
 import docker from "./tech/docker.png";
 import figma from "./tech/figma.png";
 import git from "./tech/git.png";
-import html from "./tech/html.png";
-import javascriptIcon from "./tech/javascriptIcon.png";
 import mongodb from "./tech/mongodb.png";
 import nodejs from "./tech/nodejs.png";
 import reactjs from "./tech/reactjs.png";
 import redux from "./tech/redux.png";
 import tailwind from "./tech/tailwind.png";
 import typescript from "./tech/typescript.png";
-import threejs from "./tech/threejs.svg";
+import threejs from "./tech/Threejs-logo.png";
 import n8n from './tech/n8n-icon.png'
 import dockericon from './tech/docker-icon.png'
 import langchainIcons from './tech/langchainIcon.png'
-import langsmithicon from './tech/langsmithIcon.png'
-import langgraphIcon from './tech/langgraphIcon.png'
 import haystackIcon from './tech/haystackIcon.png'
 
 import Eweb from './Eweb.png'
@@ -44,8 +39,6 @@ import jarvis from './jarvis.png'
 export {
   Eweb,
   haystackIcon,
-  langgraphIcon,
-  langsmithicon,
   langchainIcons,
   jarvis,
   nocode,
@@ -64,12 +57,9 @@ export {
   linkedin,
   menu,
   close,
-  css,
   docker,
   figma,
   git,
-  html,
-  javascriptIcon,
   mongodb,
   nodejs,
   reactjs,
