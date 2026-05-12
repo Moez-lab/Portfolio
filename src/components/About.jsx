@@ -58,7 +58,7 @@ const About = () => {
         <br /><b>What I do:</b> <br />
         <b>• AI & Computer Vision:</b> Real-time object detection, face recognition, LLM integration, NLP, Generative AI, image processing, Agentic AI, Multimodal AI <br />
         <b>• Full-Stack Engineering:</b> Building clean, robust architectures that allow models to shine in the real world.<br />
-        <b>• Current Focus:</b> Model deployment pipelines, real-time inference,responsible/agentic and generative AI.<br />
+        <b>• Current Focus:</b> Model deployment pipelines, real-time inference, responsible/agentic and generative AI.<br />
 
         <br /> Let's connect if you're talking about AI deployment/integration, ML, or building the next generation of smart apps and webs!
       </motion.p>
