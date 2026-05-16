@@ -98,7 +98,7 @@ const Navbar = () => {
                   download="Moez_Zakir_Resume.pdf"
                   onClick={() => setToggle(!toggle)}
                 >
-                  Download Resume ⬇️
+                  Resume⬇️
                 </a>
               </li>
 
