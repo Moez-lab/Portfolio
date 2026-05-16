@@ -58,7 +58,7 @@ const Navbar = () => {
           {/* Resume Download (Desktop) */}
           <li className="text-secondary hover:text-white text-[18px] font-medium cursor-pointer">
             <a href={resume} download="Moez_Zakir_Resume.pdf">
-              Download Resume ⬇️
+              Resume⬇️
             </a>
           </li>
         </ul>
