@@ -1,4 +1,6 @@
 import {
+  n8nproject,
+  AiAttendance,
   Eweb,
   haystackIcon,
   langchainIcons,
@@ -257,6 +259,31 @@ const projects = [
     ],
     image: jarvis,
     source_code_link: "https://github.com/Moez-lab/AI-Assistant",
+  },
+  {
+    name: "AI Base Attendance System",
+    description: "An AI-powered face recognition attendance system using Python, OpenCV, and Tkinter automate student attendance with real-time facial detection, image training, and CSV tracking",
+    tags: [
+      { name: "Computer Vision", color: "blue-text-gradient" },
+      { name: "OpenCV", color: "green-text-gradient" },
+      { name: "Tkinter", color: "pink-text-gradient" },
+      { name: "Python", color: "blue-text-gradient" },
+      { name: "Machine Learning", color: "green-text-gradient" },
+    ],
+    image: AiAttendance,
+    source_code_link: "https://github.com/Moez-lab/AI-Base-Attendance-System.git",
+  },
+  {
+    name: "AI Agent for CRM Lead Qualification & Email Outreach",
+    description: "Automated n8n workflow that integrated with Google Workspace and Gemini AI using asynchronous polling, custom OAuth 2.0, AI agent orchestration, and structured JSON parsing. The automation extracted incoming spreadsheet leads, utilized an LLM to evaluate the data, enforced strict output formatting to strip conversational filler, and dispatched personalized welcome emails via Gmail all without manual intervention",
+    tags: [
+      { name: "n8n", color: "blue-text-gradient" },
+      { name: "Automation", color: "green-text-gradient" },
+      { name: "Zapier", color: "pink-text-gradient" },
+      { name: "CRM", color: "blue-text-gradient" },
+    ],
+    image: n8nproject,
+    source_code_link: "/",
   },
   {
     name: "Zomato App",

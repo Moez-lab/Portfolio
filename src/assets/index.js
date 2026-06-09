@@ -35,6 +35,8 @@ import fullsatck from './fullstack.png'
 import mlops from './mlops.png'
 import nocode from './nocode.png'
 import jarvis from './jarvis.png'
+import AiAttendance from './AiAttendance.png'
+import n8nproject from './n8n_project.png'
 
 export {
   Eweb,
@@ -43,6 +45,7 @@ export {
   jarvis,
   nocode,
   email_spam,
+  AiAttendance,
   face_reg,
   house,
   zomato,
@@ -71,4 +74,5 @@ export {
   dockericon,
   fullsatck,
   mlops,
+  n8nproject
 };
