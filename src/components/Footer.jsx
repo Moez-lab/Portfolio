@@ -1,7 +1,11 @@
+"use client";
+
 import React from 'react';
-import { github, linkedin, logo } from '../assets';
 import { navLinks } from '../constants';
-import { Link } from 'react-router-dom';
+
+const github = "/assets/icons/github.png";
+const linkedin = "/assets/icons/linkedin.png";
+const logo = "/assets/profile/logo.png";
 
 const Footer = () => {
   return (

@@ -1,9 +1,14 @@
+"use client";
+
 import { useState } from "react";
-import { Link } from "react-router-dom";
+import Link from "next/link";
 import { styles } from "../style";
 import { navLinks } from "../constants";
-import { logo, menu, close } from "../assets";
-import resume from "../assets/resume.pdf";
+
+// Direct public paths
+const logo = "/assets/profile/logo.png";
+const menu = "/assets/icons/menu.svg";
+const close = "/assets/icons/close.svg";
 
 const Navbar = () => {
   const [active, setActive] = useState("");
@@ -17,7 +22,7 @@ const Navbar = () => {
 
         {/* Logo + Home Link */}
         <Link
-          to={"/"}
+          href={"/"}
           className="flex items-center gap-2"
           onClick={() => {
             setActive("");
@@ -55,12 +60,6 @@ const Navbar = () => {
           </li>
 
 
-          {/* Resume Download (Desktop) */}
-          <li className="text-secondary hover:text-white text-[18px] font-medium cursor-pointer">
-            <a href={resume} download="Moez_Zakir_Resume.pdf">
-              Resume⬇️
-            </a>
-          </li>
         </ul>
 
         {/* Mobile Navigation */}
@@ -90,17 +89,6 @@ const Navbar = () => {
                 </a>
               </li>
 
-
-              {/* Resume Download (Mobile) */}
-              <li className="text-secondary font-poppins text-[16px] font-medium cursor-pointer hover:text-white">
-                <a
-                  href={resume}
-                  download="Moez_Zakir_Resume.pdf"
-                  onClick={() => setToggle(!toggle)}
-                >
-                  Resume⬇️
-                </a>
-              </li>
 
               {/* Nav Links */}
               {navLinks.map((items) => (

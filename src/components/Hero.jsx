@@ -1,12 +1,12 @@
+"use client";
+
 import { motion } from "framer-motion";
 import { styles } from "../style";
-import { Link } from "react-router-dom";
-// Import your personal photo here
-import myPhoto from "../assets/pfpic.png";
-import resume from "../assets/resume.pdf";
-import github from "../assets/github.png";
-import linkedin from "../assets/linkedin.png";
-import resumeIcon from "../assets/resumeDownloadIcon.png";
+
+// Assets served from public/assets/
+const myPhoto = "/assets/profile/pfpic.png";
+const github = "/assets/icons/github.png";
+const linkedin = "/assets/icons/linkedin.png";
 
 
 const Hero = () => {
@@ -66,17 +66,15 @@ const Hero = () => {
 
                             <a
                                 className="flex flex-col justify-center items-center hover:scale-110 transition-transform"
-                                href={resume}
-                                target="_blank"
-                                rel="noopener noreferrer"
+                                href="#contact"
                             >
-                                <img
-                                    className="h-10 w-10"
-                                    src={resumeIcon}
-                                    alt="Resume"
-                                />
+                                <div className="h-10 w-10 bg-black-200 border border-white/10 rounded-full flex items-center justify-center shadow-md">
+                                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" className="w-5 h-5 text-[#915eff]">
+                                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
+                                    </svg>
+                                </div>
                                 <p className="text-white text-[14px] mt-1 text-center">
-                                    Resume
+                                    Email
                                 </p>
                             </a>
                         </div>

@@ -1,11 +1,14 @@
+"use client";
+
 import Tilt from "react-parallax-tilt";
 import { useState } from "react";
 import { motion } from "framer-motion";
 import { styles } from "../style";
 import { fadeIn } from "../utils/motion";
 import { SectionWrapper } from "../hoc";
-import { github } from "../assets";
 import { projects } from "../constants";
+
+const github = "/assets/icons/github.png";
 
 
 const words = 160;
@@ -96,10 +99,10 @@ const Work = () => {
           variants={fadeIn("", "", 0.1, 1)}
           className={`${styles.sectionSubText} mt-4 text-secondary text-[17px] max-w-3xl leading-[30px]`}
         >
-          🌐 I have worked on a diverse array of projects that showcase my
+          I have worked on a diverse array of projects that showcase my
           passion for technology and innovation. From building responsive
           websites and full-stack applications to developing intelligent AI/ML
-          models and dynamic mobile apps, I am driven by the challenge of
+          models, I am driven by the challenge of
           creating seamless user experiences and implementing efficient,
           data-driven solutions.
         </motion.p>

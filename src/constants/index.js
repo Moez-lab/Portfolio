@@ -1,34 +1,3 @@
-import {
-  n8nproject,
-  AiAttendance,
-  Eweb,
-  haystackIcon,
-  langchainIcons,
-  jarvis,
-  mobile,
-  web,
-  reactjs,
-  redux,
-  tailwind,
-  nodejs,
-  mongodb,
-  git,
-  figma,
-  cv,
-  threejs,
-  machine,
-  zomato,
-  house,
-  face_reg,
-  email_spam,
-  n8n,
-  dockericon,
-  fullsatck,
-  mlops,
-  nocode
-} from "../assets";
-
-
 export const navLinks = [
   {
     id: "about",
@@ -46,161 +15,94 @@ export const navLinks = [
 
 const services = [
   {
-    title: "Full Stack Web Developer (MERN STACK)",
-    icon: web,
+    title: "Agentic AI & LLM Systems",
+    icon: "/assets/experience/machine.png",
   },
   {
-    title: "Native Expo (Full Stack App Developer)",
-    icon: mobile,
-  },
-
-  {
-    title: "AI/ML Enthusiast",
-    icon: machine,
+    title: "Full-Stack Product Engineering",
+    icon: "/assets/experience/web.png",
   },
   {
-    title: "ComputerVision Specialist ",
-    icon: cv,
+    title: "Computer Vision & ML",
+    icon: "/assets/experience/cv.png",
   },
   {
-    title: "No/Low-code ",
-    icon: nocode,
-  },
-  {
-    title: "MLOPS ",
-    icon: mlops,
+    title: "Workflow Automation",
+    icon: "/assets/experience/creator.png",
   },
 ];
 
 const technologies = [
   {
     name: "React JS",
-    icon: reactjs,
+    icon: "/assets/tech/reactjs.png",
   },
   {
     name: "Redux Toolkit",
-    icon: redux,
+    icon: "/assets/tech/redux.png",
   },
   {
     name: "Tailwind CSS",
-    icon: tailwind,
+    icon: "/assets/tech/tailwind.png",
   },
   {
     name: "Node JS",
-    icon: nodejs,
+    icon: "/assets/tech/nodejs.png",
   },
   {
     name: "MongoDB",
-    icon: mongodb,
+    icon: "/assets/tech/mongodb.png",
   },
   {
     name: "Three JS",
-    icon: threejs,
+    icon: "/assets/tech/Threejs-logo.png",
   },
   {
     name: "git",
-    icon: git,
+    icon: "/assets/tech/git.png",
   },
   {
     name: "figma",
-    icon: figma,
+    icon: "/assets/tech/figma.png",
   },
   {
     name: "CV",
-    icon: cv,
+    icon: "/assets/experience/cv.png",
   },
   {
     name: "AI/ML",
-    icon: machine,
+    icon: "/assets/experience/machine.png",
   },
   {
     name: "N8N",
-    icon: n8n,
+    icon: "/assets/tech/n8n-icon.png",
   },
   {
     name: "Docker",
-    icon: dockericon,
+    icon: "/assets/tech/docker-icon.png",
   },
   {
     name: "Lang framework",
-    icon: langchainIcons,
+    icon: "/assets/tech/langchainIcon.png",
   },
   {
     name: "Haystack",
-    icon: haystackIcon,
+    icon: "/assets/tech/haystackIcon.png",
   }
 ];
 
-
 const experiences = [
   {
-    title: "Full stack Developer",
-    company_name: "",
-    icon: fullsatck,
+    title: "Full Stack Engineer & AI Developer",
+    company_name: "Fintech Fusion",
+    icon: "/assets/experience/fullstack.png",
     iconBg: "#E6DEDD",
-    date: "Jan 2023 - Present",
+    date: "April 2026 - Present",
     points: [
-      "Developing and maintaining full-stack web applications using the MERN stack, with strong expertise in React.js, Vite, Vue.js, and Next.js.",
-      "Building high-performance mobile applications using React Native and Expo.",
-      "Collaborating with designers, product managers, and engineering teams to deliver clean, scalable, and user-focused solutions.",
-      "Implementing responsive UI/UX designs and ensuring consistent performance across browsers and devices.",
-      "Conducting code reviews, optimizing code quality, and contributing to best practices in development workflows."
-    ],
-  },
-  {
-    title: "AI/ML Enthusiast",
-    company_name: "",
-    icon: machine,
-    iconBg: "#383E56",
-    date: "Jan 2024 - Present",
-    points: [
-      "Completed Machine Learning and Deep Learning Specializations by Andrew Ng, covering supervised, unsupervised, and advanced deep learning methods.",
-      "Building AI models for iris detection, email spam detection, house price prediction, and face detection using TensorFlow and Scikit-learn.",
-      "Working with Large Language Models (LLMs) and Generative AI, including fine-tuning, prompt engineering, and model integration.",
-      "Developing and deploying AI services and APIs using FastAPI, integrating ML/LLM workflows into real-world applications.",
-      "Implementing Retrieval-Augmented Generation (RAG) pipelines using LangChain for intelligent, context-aware AI systems."
-    ]
-  },
-  {
-    title: "Computer Vision Specialist",
-    company_name: "",
-    icon: cv,
-    iconBg: "#383E56",
-    date: "Jan 2025 - Present",
-    points: [
-      "Implemented computer vision algorithms to create traffic light detection systems using PCA, YOLO, and image processing techniques.",
-      "Developed skin and nose detection models, enhancing image analysis and recognition accuracy.",
-      "Leveraged depth perception algorithms to enable a computer to determine the proximity of objects.",
-      "Applied advanced image processing methods for feature extraction and object classification.",
-    ],
-
-  },
-  {
-    title: "No/Low-Code",
-    company_name: "",
-    icon: n8n,
-    iconBg: "#383E56",
-    date: "Jan 2025 - Present",
-    points: [
-      "Automated workflows and integrations using n8n, enabling seamless data transfer between apps and services without extensive coding.",
-      "Implemented AI-powered content and voice solutions leveraging ElevenLabs and VAPI to enhance multimedia experiences and streamline processes.",
-      "Optimized customer and business operations through CRM platforms, automating routine tasks and improving data driven decision making.",
-      "Combined low-code tools with AI and automation to rapidly prototype solutions, reduce development time, and improve operational efficiency."
-    ],
-  },
-  {
-    title: "MLOPS",
-    company_name: "",
-    icon: mlops,
-    iconBg: "#383E56",
-    date: "Jan 2025 - Present",
-    points: [
-      "Designing and automating end to end ML pipelines, including data preprocessing, model training, evaluation, and deployment.",
-      "Implementing CI/CD workflows for machine learning models using tools such as GitHub Actions and Docker.",
-      "Containerizing ML and LLM applications with Docker for scalable and reproducible deployments.",
-      "Monitoring model performance, drift, and data quality to ensure reliable production behavior.",
-      "Managing experiment tracking, versioning, and reproducibility using MLflow and DVC.",
-      "Deploying models and AI services using FastAPI, cloud platforms, and REST-based architectures.",
+      "Architecting and developing modern, responsive fintech web applications utilizing Next.js, React.js, and Node.js.",
+      "Designing and implementing Agentic AI workflows and LLM systems (n8n, LangChain, Gemini) for automated financial operations and analysis.",
+      "Optimizing database schemas and server architectures (FastAPI, MongoDB, PostgreSQL) for high-performance and sub-second query latency.",
+      "Collaborating in cross-functional teams to build clean, maintainable product features and API integrations."
     ],
   },
 ];
@@ -234,6 +136,18 @@ const testimonials = [
 
 const projects = [
   {
+    name: "AI Agent for CRM Lead Qualification & Email Outreach",
+    description: "Automated n8n workflow that integrated with Google Workspace and Gemini AI using asynchronous polling, custom OAuth 2.0, AI agent orchestration, and structured JSON parsing. The automation extracted incoming spreadsheet leads, utilized an LLM to evaluate the data, enforced strict output formatting to strip conversational filler, and dispatched personalized welcome emails via Gmail all without manual intervention",
+    tags: [
+      { name: "n8n", color: "blue-text-gradient" },
+      { name: "Automation", color: "green-text-gradient" },
+      { name: "Zapier", color: "pink-text-gradient" },
+      { name: "CRM", color: "blue-text-gradient" },
+    ],
+    image: "/assets/projects/n8n_project.png",
+    source_code_link: "/",
+  },
+  {
     name: "E-Commerce Website",
     description: "E-Commerce Website",
     tags: [
@@ -244,7 +158,7 @@ const projects = [
       { name: "Docker", color: "green-text-gradient" },
       { name: "PostgreSQL", color: "pink-text-gradient" },
     ],
-    image: Eweb,
+    image: "/assets/projects/Eweb.png",
     source_code_link: "https://github.com/Moez-lab/AI-Base-Ecommerce.git",
   },
   {
@@ -257,7 +171,7 @@ const projects = [
       { name: "Selenium", color: "blue-text-gradient", },
       { name: "PyAutoGUI", color: "green-text-gradient", },
     ],
-    image: jarvis,
+    image: "/assets/projects/jarvis.png",
     source_code_link: "https://github.com/Moez-lab/AI-Assistant",
   },
   {
@@ -270,42 +184,10 @@ const projects = [
       { name: "Python", color: "blue-text-gradient" },
       { name: "Machine Learning", color: "green-text-gradient" },
     ],
-    image: AiAttendance,
+    image: "/assets/projects/AiAttendance.png",
     source_code_link: "https://github.com/Moez-lab/AI-Base-Attendance-System.git",
   },
-  {
-    name: "AI Agent for CRM Lead Qualification & Email Outreach",
-    description: "Automated n8n workflow that integrated with Google Workspace and Gemini AI using asynchronous polling, custom OAuth 2.0, AI agent orchestration, and structured JSON parsing. The automation extracted incoming spreadsheet leads, utilized an LLM to evaluate the data, enforced strict output formatting to strip conversational filler, and dispatched personalized welcome emails via Gmail all without manual intervention",
-    tags: [
-      { name: "n8n", color: "blue-text-gradient" },
-      { name: "Automation", color: "green-text-gradient" },
-      { name: "Zapier", color: "pink-text-gradient" },
-      { name: "CRM", color: "blue-text-gradient" },
-    ],
-    image: n8nproject,
-    source_code_link: "/",
-  },
-  {
-    name: "Zomato App",
-    description:
-      "A cross-platform mobile application that replicates the core functionalities of the Zomato food delivery experience. Built using React Native with Expo for fast development and deployment, Supabase as the backend-as-a-service for authentication, and Redux Toolkit for efficient global state management.",
-    tags: [
-      {
-        name: "React Native",
-        color: "blue-text-gradient",
-      },
-      {
-        name: "Supabase",
-        color: "green-text-gradient",
-      },
-      {
-        name: "tailwind",
-        color: "pink-text-gradient",
-      },
-    ],
-    image: zomato,
-    source_code_link: "https://github.com/Moez-lab/Zomato-Food-App",
-  },
+
   {
     name: "House Price Prediction",
     description:
@@ -324,7 +206,7 @@ const projects = [
         color: "pink-text-gradient",
       },
     ],
-    image: house,
+    image: "/assets/projects/house.png",
     source_code_link: "https://github.com/Moez-lab/House-Price-Prediction",
   },
   {
@@ -345,7 +227,7 @@ const projects = [
         color: "pink-text-gradient",
       },
     ],
-    image: face_reg,
+    image: "/assets/projects/face_reg.png",
     source_code_link: "https://github.com/Moez-lab/FaceRecoginitionSystem",
   },
   {
@@ -366,9 +248,9 @@ const projects = [
         color: "pink-text-gradient",
       },
     ],
-    image: email_spam,
+    image: "/assets/projects/email_spam.jpg",
     source_code_link: "https://github.com/Moez-lab/Spam-Email-Detector",
   },
 ];
 
-export { services, technologies, experiences, testimonials, projects };
+export { services, technologies, experiences, testimonials, projects };

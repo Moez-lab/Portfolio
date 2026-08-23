@@ -1,3 +1,5 @@
+"use client";
+
 import React, { Suspense, useEffect, useState } from "react";
 import { Canvas } from "@react-three/fiber";
 import { OrbitControls, Preload } from "@react-three/drei";
@@ -6,11 +8,11 @@ import Loader from "./Loader";
 
 export default function ComputersCanvas() {
   const [viewport, setViewport] = useState({
-    width: window.innerWidth,
-    height: window.innerHeight,
+    width: 0,
+    height: 0,
   });
 
-  // Update viewport on resize
+  // Update viewport on mount and resize
   useEffect(() => {
     function handleResize() {
       setViewport({
@@ -18,6 +20,7 @@ export default function ComputersCanvas() {
         height: window.innerHeight,
       });
     }
+    handleResize(); // set initial value
     window.addEventListener("resize", handleResize);
     return () => window.removeEventListener("resize", handleResize);
   }, []);

@@ -1,3 +1,5 @@
+"use client";
+
 import Tilt from 'react-parallax-tilt';
 import { motion } from 'framer-motion';
 import { styles } from '../style';
@@ -56,9 +58,10 @@ const About = () => {
         I turn data and algorithms into smart, production-ready applications. With a strong foundation in AI Integration, Machine Learning, Deep Learning, and Computer Vision, I specialise in taking AI out of the research phase and integrating it into intuitive, scalable software.<br />
 
         <br /><b>What I do:</b> <br />
-        <b>• AI & Computer Vision:</b> Real-time object detection, face recognition, LLM integration, NLP, Generative AI, image processing, Agentic AI, Multimodal AI <br />
-        <b>• Full-Stack Engineering:</b> Building clean, robust architectures that allow models to shine in the real world.<br />
-        <b>• Current Focus:</b> Model deployment pipelines, real-time inference, responsible/agentic and generative AI.<br />
+        <b>• Agentic AI & LLM Systems</b><br />
+        <b>• Full-Stack Product Engineering</b><br />
+        <b>• Computer Vision & ML</b><br />
+        <b>• Workflow Automation</b><br />
 
         <br /> Let's connect if you're talking about AI deployment/integration, ML, or building the next generation of smart apps and webs!
       </motion.p>
