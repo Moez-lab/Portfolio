@@ -1,6 +1,7 @@
 "use client";
 
 import dynamic from "next/dynamic";
+import { ThemeProvider } from "../src/context/ThemeContext";
 
 // Spinner shown while sections load
 const PageLoader = dynamic(() => import("../src/components/PageLoader"), {
@@ -46,16 +47,18 @@ const Footer = dynamic(() => import("../src/components/Footer"), {
 
 export default function ClientApp() {
   return (
-    <div className="relative z-0 bg-primary overflow-hidden">
-      <div>
-        <Navbar />
-        <Hero />
-        <About />
-        <Stats />
-        <Work />
-        <Contact />
-        <Footer />
+    <ThemeProvider>
+      <div className="relative z-0 bg-white dark:bg-primary text-slate-900 dark:text-white min-h-screen transition-colors duration-300 overflow-hidden">
+        <div>
+          <Navbar />
+          <Hero />
+          <About />
+          <Stats />
+          <Work />
+          <Contact />
+          <Footer />
+        </div>
       </div>
-    </div>
+    </ThemeProvider>
   );
 }

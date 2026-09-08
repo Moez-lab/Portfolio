@@ -1,6 +1,5 @@
 "use client";
 
-import Tilt from 'react-parallax-tilt';
 import { motion } from 'framer-motion';
 import { styles } from '../style';
 import { services } from '../constants';
@@ -9,29 +8,24 @@ import { SectionWrapper } from '../hoc';
 
 const ServiceCard = ({ index, title, icon }) => {
   return (
-    <Tilt className="xs:w-[250px] w-full">
+    <div className="xs:w-[250px] w-full">
       <motion.div
         variants={fadeIn('right', 'spring', index * 0.25, 0.5)}
         className="w-full green-pink-gradient p-[1px] rounded-[20px] shadow-card"
-        viewport={{ once: true, amount: 0 }} // Trigger earlier and only once
+        viewport={{ once: true, amount: 0 }}
       >
         <div
-          options={{
-            max: 45,
-            scale: 1,
-            speed: 450,
-          }}
-          className="bg-tertiary rounded-[20px] py-5 px-12 min-h-[280px] flex justify-evenly items-center flex-col"
+          className="bg-white dark:bg-tertiary rounded-[20px] py-5 px-12 min-h-[280px] flex justify-evenly items-center flex-col shadow-sm dark:shadow-none transition-colors duration-300"
         >
           <img
             src={icon}
             alt={title}
             className="w-16 h-16 object-contain"
           />
-          <h3 className="text-white text-[20px] font-bold text-center">{title}</h3>
+          <h3 className="text-slate-900 dark:text-white text-[20px] font-bold text-center">{title}</h3>
         </div>
       </motion.div>
-    </Tilt>
+    </div>
   )
 }
 
@@ -51,7 +45,7 @@ const About = () => {
 
       <motion.p
         variants={fadeIn('', '', 0.05, 0.55)}
-        className={`${styles.sectionSubText} mt-4 text-secondary text-[17px] max-w-3xl leading-[50px]`}
+        className={`${styles.sectionSubText} mt-4 text-slate-600 dark:text-secondary text-[17px] max-w-3xl leading-[30px]`}
         viewport={{ once: true, amount: 0 }} // Adjusted viewport trigger
       >
         <b>AI Engineer & MERN Stack Developer</b><br />

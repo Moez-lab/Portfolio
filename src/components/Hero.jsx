@@ -26,10 +26,10 @@ const Hero = () => {
 
                     {/* A. Text Section */}
                     <div className="flex-1">
-                        <h1 className={`${styles.heroHeadText} text-white`}>
+                        <h1 className={styles.heroHeadText}>
                             Hi, I'm <span className="text-[#915eff]">Moez</span>
                         </h1>
-                        <p className={`${styles.heroSubText} mt-2 text-white-100`}>
+                        <p className={`${styles.heroSubText} mt-2`}>
                             I am a Full Stack Web/App Developer <br /> AI/ML Engineer <br /> LLM
                             Integrator
                         </p>
@@ -43,11 +43,11 @@ const Hero = () => {
                                 rel="noopener noreferrer"
                             >
                                 <img
-                                    className="h-10 w-10"
+                                    className="h-10 w-10 brightness-0 dark:brightness-100"
                                     src={github}
                                     alt="Github"
                                 />
-                                <p className="text-white text-[14px] mt-1">Github</p>
+                                <p className="text-slate-700 dark:text-white text-[14px] mt-1 font-medium">Github</p>
                             </a>
 
                             <a
@@ -61,19 +61,19 @@ const Hero = () => {
                                     src={linkedin}
                                     alt="Linkedin"
                                 />
-                                <p className="text-white text-[14px] mt-1">Linkedin</p>
+                                <p className="text-slate-700 dark:text-white text-[14px] mt-1 font-medium">Linkedin</p>
                             </a>
 
                             <a
                                 className="flex flex-col justify-center items-center hover:scale-110 transition-transform"
                                 href="#contact"
                             >
-                                <div className="h-10 w-10 bg-black-200 border border-white/10 rounded-full flex items-center justify-center shadow-md">
+                                <div className="h-10 w-10 bg-slate-100 dark:bg-black-200 border border-slate-300 dark:border-white/10 rounded-full flex items-center justify-center shadow-md">
                                     <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" className="w-5 h-5 text-[#915eff]">
                                         <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
                                     </svg>
                                 </div>
-                                <p className="text-white text-[14px] mt-1 text-center">
+                                <p className="text-slate-700 dark:text-white text-[14px] mt-1 text-center font-medium">
                                     Email
                                 </p>
                             </a>
@@ -83,14 +83,14 @@ const Hero = () => {
                     {/* B. Image Section (Right Side) */}
                     <div className="flex-1 flex justify-center items-center relative">
                         {/* Optional: Add a glow effect behind the image */}
-                        <div className="absolute z-0 w-[40%] h-[35%] top-0 pink__gradient" />
+                        <div className="absolute z-0 w-[40%] h-[35%] top-0 pink__gradient opacity-50 dark:opacity-100" />
 
                         <img
                             src={myPhoto}
                             alt="Moez"
                             // Replaced rounded-2xl with rounded-full.
                             // Added aspect-square and changed object-contain to object-cover for a perfect circle.
-                            className="w-[70%] aspect-square object-cover rounded-full z-10 border-2 border-secondary/20 shadow-card"
+                            className="w-[70%] aspect-square object-cover rounded-full z-10 border-2 border-slate-200 dark:border-secondary/20 shadow-xl dark:shadow-card"
                         />
                     </div>
 

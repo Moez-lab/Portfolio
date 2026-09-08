@@ -2,7 +2,6 @@
 
 import React from "react";
 import { motion } from "framer-motion";
-import Tilt from "react-parallax-tilt";
 import { styles } from "../style";
 import { SectionWrapper } from "../hoc";
 import { fadeIn, textVariant } from "../utils/motion";
@@ -13,21 +12,15 @@ const StatCard = ({ index, number, label, glowColor, textColor, bgGrad }) => {
       variants={fadeIn("up", "spring", index * 0.25, 0.75)}
       className="w-full"
     >
-      <Tilt
-        glareEnable={true}
-        glareMaxOpacity={0.2}
-        scale={1.05}
-        transitionSpeed={450}
-        tiltMaxAngleX={10}
-        tiltMaxAngleY={10}
-        className="p-[1px] rounded-3xl shadow-card cursor-pointer duration-300 transition-all"
+      <div
+        className="p-[1px] rounded-3xl shadow-card cursor-pointer duration-300 transition-all hover:scale-105"
         style={{
           background: bgGrad,
           boxShadow: `0 0 25px ${glowColor}15`,
         }}
       >
         <div
-          className="bg-[#151030]/85 rounded-3xl py-12 px-8 flex justify-center items-center flex-col min-h-[220px] border border-white/5 backdrop-blur-lg hover:border-white/10 transition-all duration-300"
+          className="bg-white/95 dark:bg-[#151030]/85 rounded-3xl py-12 px-8 flex justify-center items-center flex-col min-h-[220px] border border-slate-200 dark:border-white/5 backdrop-blur-lg hover:border-slate-300 dark:hover:border-white/10 shadow-lg dark:shadow-none transition-all duration-300"
         >
           <span
             className="text-[64px] font-black tracking-tight"
@@ -38,11 +31,11 @@ const StatCard = ({ index, number, label, glowColor, textColor, bgGrad }) => {
           >
             {number}
           </span>
-          <p className="text-secondary text-[18px] font-semibold uppercase tracking-widest mt-2">
+          <p className="text-slate-600 dark:text-secondary text-[18px] font-semibold uppercase tracking-widest mt-2">
             {label}
           </p>
         </div>
-      </Tilt>
+      </div>
     </motion.div>
   );
 };
@@ -50,7 +43,7 @@ const StatCard = ({ index, number, label, glowColor, textColor, bgGrad }) => {
 const Stats = () => {
   const statItems = [
     {
-      number: "8+",
+      number: "4+",
       label: "Projects",
       glowColor: "#60a5fa", // soft light blue
       textColor: "#93c5fd",

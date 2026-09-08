@@ -107,33 +107,6 @@ const experiences = [
   },
 ];
 
-const testimonials = [
-  {
-    testimonial:
-      "I thought it was impossible to make a website as beautiful as our product, but Rick proved me wrong.",
-    name: "Sara Lee",
-    designation: "CFO",
-    company: "Acme Co",
-    image: "https://randomuser.me/api/portraits/women/4.jpg",
-  },
-  {
-    testimonial:
-      "I've never met a web developer who truly cares about their clients' success like Rick does.",
-    name: "Chris Brown",
-    designation: "COO",
-    company: "DEF Corp",
-    image: "https://randomuser.me/api/portraits/men/5.jpg",
-  },
-  {
-    testimonial:
-      "After Rick optimized our website, our traffic increased by 50%. We can't thank them enough!",
-    name: "Lisa Wang",
-    designation: "CTO",
-    company: "456 Enterprises",
-    image: "https://randomuser.me/api/portraits/women/6.jpg",
-  },
-];
-
 const projects = [
   {
     name: "AI Agent for CRM Lead Qualification & Email Outreach",
@@ -144,35 +117,21 @@ const projects = [
       { name: "Zapier", color: "pink-text-gradient" },
       { name: "CRM", color: "blue-text-gradient" },
     ],
-    image: "/assets/projects/n8n_project.png",
-    source_code_link: "/",
+    images: ["/assets/projects/n8n_project.png"],
+    source_code_link: "#",
   },
   {
-    name: "E-Commerce Website",
-    description: "E-Commerce Website",
+    name: "MzTrend RAG E-Commerce Platform",
+    description: "Full-stack e-commerce platform featuring MzBot, a RAG-powered AI chatbot using Gemini text-embedding-004 and cosine similarity search over a custom product knowledge base. Implements a hybrid semantic search engine combining BM25 keyword scoring with Gemini vector embeddings and intent detection. Built with Next.js 16, TypeScript, and PostgreSQL. Includes full storefront, cart, checkout with coupons, and a role-based admin dashboard with NextAuth v4 authentication.",
     tags: [
-      { name: "LangChain", color: "blue-text-gradient" },
-      { name: "Langsmith", color: "green-text-gradient" },
-      { name: "Pinecone", color: "pink-text-gradient" },
-      { name: "Kafka", color: "blue-text-gradient" },
-      { name: "Docker", color: "green-text-gradient" },
+      { name: "Next.js 16", color: "blue-text-gradient" },
+      { name: "RAG / Gemini AI", color: "green-text-gradient" },
       { name: "PostgreSQL", color: "pink-text-gradient" },
+      { name: "NextAuth v4", color: "blue-text-gradient" },
+      { name: "TypeScript", color: "green-text-gradient" },
     ],
-    image: "/assets/projects/Eweb.png",
+    images: ["/assets/projects/Eweb.png"],
     source_code_link: "https://github.com/Moez-lab/AI-Base-Ecommerce.git",
-  },
-  {
-    name: "JARVIS AI Assistant",
-    description: "Advanced AI assistant featuring a stunning 3D avatar interface with real-time lip-sync animations powered by React Three Fiber. Integrates YOLOv8 for 80+ object detection, DeepFace for face recognition and emotion detection, neural TTS with voice synthesis, and real-time face tracking. Built with Python backend and WebSocket communication for synchronized avatar responses. Includes desktop automation, voice command recognition, and intelligent visual analysis capabilities.",
-    tags: [
-      { name: "React Three Fiber", color: "blue-text-gradient", },
-      { name: "YOLOv8", color: "green-text-gradient", },
-      { name: "Ollama", color: "pink-text-gradient", },
-      { name: "Selenium", color: "blue-text-gradient", },
-      { name: "PyAutoGUI", color: "green-text-gradient", },
-    ],
-    image: "/assets/projects/jarvis.png",
-    source_code_link: "https://github.com/Moez-lab/AI-Assistant",
   },
   {
     name: "AI Base Attendance System",
@@ -184,73 +143,45 @@ const projects = [
       { name: "Python", color: "blue-text-gradient" },
       { name: "Machine Learning", color: "green-text-gradient" },
     ],
-    image: "/assets/projects/AiAttendance.png",
+    images: ["/assets/projects/AiAttendance.png"],
     source_code_link: "https://github.com/Moez-lab/AI-Base-Attendance-System.git",
   },
 
   {
-    name: "House Price Prediction",
-    description:
-      "A Machine Learning project that predicts California house prices using Linear Regression and Random Forest. It includes data preprocessing, feature engineering, visualizations, and model evaluation with hyperparameter tuning using GridSearchCV..",
+    name: "Real-Time Fraud Detection & Autonomous MLOps Pipeline",
+    description: "Streaming fraud detection system processing 284K+ transactions with sub-100ms latency via Kafka and PySpark Pandas UDF. XGBoost classifier achieves 98.3% ROC-AUC. Includes an autonomous triage agent that evaluates customer profiles and executes automated actions (card freezing, SMS 2FA) without human intervention. Features a full Airflow MLOps retrain pipeline with Jensen-Shannon divergence drift monitors and a champion/challenger model governance registry. Dockerized across seven services using Docker Compose.",
     tags: [
-      {
-        name: "ML",
-        color: "blue-text-gradient",
-      },
-      {
-        name: "Supervised Learning",
-        color: "green-text-gradient",
-      },
-      {
-        name: "Random Forest",
-        color: "pink-text-gradient",
-      },
+      { name: "Kafka / Spark", color: "blue-text-gradient" },
+      { name: "XGBoost · 98.3% AUC", color: "green-text-gradient" },
+      { name: "Airflow / MLflow", color: "pink-text-gradient" },
+      { name: "Gemini AI", color: "blue-text-gradient" },
+      { name: "Docker", color: "green-text-gradient" },
     ],
-    image: "/assets/projects/house.png",
-    source_code_link: "https://github.com/Moez-lab/House-Price-Prediction",
+    images: [
+      "/assets/projects/fraud_airflow_pipeline.png",
+      "/assets/projects/fraud_triage_agent.png",
+      "/assets/projects/fraud_streaming_scoring.png",
+      "/assets/projects/fraud_spark_engine.png",
+      "/assets/projects/fraud_mlflow_tracking.png",
+    ],
+    source_code_link: "https://github.com/Moez-lab",
   },
   {
-    name: "Face Recognition System",
-    description:
-      "🎯 A face recognition system using PCA for dimensionality reduction and SVM for classification. Achieves high accuracy on facial image data with hyperparameter tuning and cross-validation.",
+    name: "AI Voice Pipeline for E-Commerce Support",
+    description: "Low-latency voice AI pipeline using Vapi AI with strict guardrails for tier-1 e-commerce support. Orchestrates Make.com and Google Gemini to analyze call transcripts, extract customer sentiment, and flag urgent issues via structured JSON. Automates backend routing: resolved calls are silently logged to Sheets while critical issues trigger real-time Slack alerts for human handoffs — reducing support overhead significantly.",
     tags: [
-      {
-        name: "PCA",
-        color: "blue-text-gradient",
-      },
-      {
-        name: "Neural Networks",
-        color: "green-text-gradient",
-      },
-      {
-        name: "CNN",
-        color: "pink-text-gradient",
-      },
+      { name: "Vapi AI", color: "blue-text-gradient" },
+      { name: "Google Gemini", color: "green-text-gradient" },
+      { name: "Make.com", color: "pink-text-gradient" },
+      { name: "Slack", color: "blue-text-gradient" },
     ],
-    image: "/assets/projects/face_reg.png",
-    source_code_link: "https://github.com/Moez-lab/FaceRecoginitionSystem",
-  },
-  {
-    name: "Email Spam Detection",
-    description:
-      "A simple machine learning project that classifies emails as Spam or Ham using Logistic Regression and TF-IDF vectorization. Built with Python and scikit-learn.",
-    tags: [
-      {
-        name: "NLP",
-        color: "blue-text-gradient",
-      },
-      {
-        name: "TFIDF",
-        color: "green-text-gradient",
-      },
-      {
-        name: "Binary Classification",
-        color: "pink-text-gradient",
-      },
+    images: [
+      "/assets/projects/voice_pipeline_flow.png",
+      "/assets/projects/voice_pipeline_sheets.png",
+      "/assets/projects/voice_pipeline_slack.png",
     ],
-    image: "/assets/projects/email_spam.jpg",
-    source_code_link: "https://github.com/Moez-lab/Spam-Email-Detector",
+    source_code_link: "#",
   },
 ];
 
-export { services, technologies, experiences, testimonials, projects };
+export { services, technologies, experiences, projects };
