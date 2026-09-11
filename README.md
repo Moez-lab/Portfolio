@@ -1,15 +1,14 @@
 # Moez Zakir AI Engineer & Full-Stack Developer Portfolio
 
-A modern, interactive personal portfolio built with **Next.js 16**, **Three.js**, and **Framer Motion**. Features 3D animations, a vertical experience timeline, project showcases, certifications, and a contact form all with seamless light/dark mode support.
+A modern, interactive personal portfolio built with **Next.js 16** and **Framer Motion**, featuring a vertical experience timeline, project showcases, certifications, and a contact form  all with seamless light/dark mode support.
 
-**Live:** [moezzakir.vercel.app](https://moezzakir.vercel.app) *(update with your actual URL)*
+🌐 **Live:** [moezzakir.vercel.app](https://moezzakir.vercel.app)
 
 ---
 
 ## Features
 
-- **3D Interactive Globe :** Powered by Three.js & React Three Fiber
-- **Light / Dark Mode :** System-aware with a manual toggle, persisted via localStorage
+- **Light / Dark Mode :** Manual toggle, persisted via localStorage
 - **Smooth Animations :** Framer Motion page transitions, fade-ins, and stagger effects
 - **Experience Timeline :** Vertical timeline with company logos and bullet points
 - **Project Showcase :** Image carousel cards with multi-image support and Read More toggle
@@ -21,7 +20,7 @@ A modern, interactive personal portfolio built with **Next.js 16**, **Three.js**
 
 ---
 
-## 🛠️ Tech Stack
+## Tech Stack
 
 ### Framework & Build
 
@@ -32,15 +31,11 @@ A modern, interactive personal portfolio built with **Next.js 16**, **Three.js**
 | **React 19**      | UI library                                        |
 | **TailwindCSS 3** | Utility-first styling                             |
 
-### Animation & 3D
+### Animation
 
-| Tool                        | Purpose                                            |
-| --------------------------- | -------------------------------------------------- |
-| **Framer Motion**     | Page animations, scroll-triggered fade-ins         |
-| **Three.js**          | 3D rendering engine                                |
-| **React Three Fiber** | React renderer for Three.js                        |
-| **React Three Drei**  | Helpers :`OrbitControls`, `Decal`, `Preload` |
-| **Maath**             | Math utilities for 3D                              |
+| Tool                    | Purpose                                    |
+| ----------------------- | ------------------------------------------ |
+| **Framer Motion** | Page animations, scroll-triggered fade-ins |
 
 ### UI & UX
 
@@ -52,7 +47,7 @@ A modern, interactive personal portfolio built with **Next.js 16**, **Three.js**
 
 ---
 
-## 📁 Project Structure
+## Project Structure
 
 ```
 portfolio/
@@ -68,7 +63,7 @@ portfolio/
 │   │   ├── Contact.jsx         # EmailJS contact form
 │   │   ├── Experience.jsx      # Vertical timeline (work history)
 │   │   ├── Footer.jsx          # Footer with links
-│   │   ├── Hero.jsx            # Landing hero with 3D globe
+│   │   ├── Hero.jsx            # Landing hero section
 │   │   ├── Navbar.jsx          # Responsive nav with dark mode toggle
 │   │   ├── Stats.jsx           # Milestones / achievement counters
 │   │   └── Work.jsx            # Project cards with image carousel
@@ -180,26 +175,25 @@ This project is a **Next.js** app Vercel auto-detects it.
 1. Push to GitHub
 2. Import repo on [vercel.com](https://vercel.com/new)
 3. Set **Framework Preset** → `Next.js`
-4. Leave Build Command & Output Directory blank (auto-detected)
-5. Deploy ✅
+4. Leave Build Command & Output Directory blank (auto-detected)Deploy ✅
 
-> No `vercel.json` needed Next.js is natively supported.
+> No `vercel.json` needed — Next.js is natively supported.
 
 ---
 
 ## Page Sections (in order)
 
-1. **Hero :** Intro, 3D animated globe, CTA buttons
+1. **Hero :** Intro and CTA buttons
 2. **About :** Overview text + specialisation service cards
-3. **Stats :**  Milestones (Projects, Certifications, Roles)
-4. **Experience :**  Vertical timeline of work history
-5. **Work :**  Project showcase with image carousels
+3. **Stats :** Milestones (Projects, Certifications, Roles)
+4. **Experience :** Vertical timeline of work history
+5. **Work :** Project showcase with image carousels
 6. **Certifications :** Credential cards (Stanford, Harvard, Udemy, Cisco)
 7. **Contact :** EmailJS contact form
 
 ---
 
-## 👨‍💻 About Me
+## About Me
 
 **Moez Zakir** AI Engineer & Full-Stack Developer
 
@@ -223,4 +217,4 @@ Specialising in:
 
 ## License
 
-Open source under the [MIT License](LICENSE)
+Open source under the [MIT License](LICENSE).
