@@ -2,6 +2,7 @@
 
 import { useState } from "react";
 import Link from "next/link";
+import Image from "next/image";
 import { styles } from "../style";
 import { navLinks } from "../constants";
 import { useTheme } from "../context/ThemeContext";
@@ -79,7 +80,14 @@ const Navbar = () => {
             window.scrollTo(0, 0);
           }}
         >
-          <img src={logo} alt="logo" className="w-9 h-9 object-contain" />
+          <Image
+            src={logo}
+            alt="Moez logo"
+            width={36}
+            height={36}
+            priority
+            className="w-9 h-9 object-contain"
+          />
           <p className="text-slate-900 dark:text-white text-[18px] font-bold cursor-pointer flex">
             Moez &nbsp; <span className="sm:block hidden">| Portfolio</span>
           </p>
@@ -92,27 +100,28 @@ const Navbar = () => {
               key={items.id}
               className={`${
                 active === items.title
-                  ? "text-[#915eff] font-semibold"
-                  : "text-slate-600 hover:text-slate-900 dark:text-secondary dark:hover:text-white"
-              } text-[18px] font-medium cursor-pointer transition-colors duration-200`}
+                  ? "text-[#915eff] font-bold"
+                  : "text-slate-700 dark:text-secondary"
+              } hover:text-[#915eff] dark:hover:text-white text-[18px] font-medium cursor-pointer transition-colors`}
               onClick={() => setActive(items.title)}
             >
               <a href={`#${items.id}`}>{items.title}</a>
             </li>
           ))}
 
-          {/* LinkedIn */}
-          <li className="text-slate-600 hover:text-slate-900 dark:text-secondary dark:hover:text-white text-[18px] font-medium cursor-pointer transition-colors duration-200">
+          {/* LinkedIn Button (Desktop) */}
+          <li>
             <a
               href="https://www.linkedin.com/in/moezzakir/"
               target="_blank"
               rel="noopener noreferrer"
+              className="border border-[#915eff] text-[#915eff] hover:bg-[#915eff] hover:text-white text-[16px] font-medium px-4 py-1.5 rounded-full transition-all duration-300"
             >
               LinkedIn
             </a>
           </li>
 
-          {/* Theme Toggle Button */}
+          {/* Light / Dark Mode Toggle */}
           <li>
             <ThemeToggle />
           </li>
@@ -122,12 +131,20 @@ const Navbar = () => {
         <div className="sm:hidden flex flex-1 justify-end items-center gap-3">
           <ThemeToggle />
 
-          <img
-            src={toggle ? close : menu}
-            alt="menu"
-            className="w-[28px] h-[28px] object-contain cursor-pointer dark:invert-0 filter invert"
+          <button
+            type="button"
+            aria-label={toggle ? "Close navigation menu" : "Open navigation menu"}
             onClick={() => setToggle(!toggle)}
-          />
+            className="p-1 focus:outline-none"
+          >
+            <Image
+              src={toggle ? close : menu}
+              alt=""
+              width={28}
+              height={28}
+              className="w-[28px] h-[28px] object-contain dark:invert-0 filter invert"
+            />
+          </button>
 
           <div
             className={`${
@@ -136,7 +153,7 @@ const Navbar = () => {
           >
             <ul className="list-none flex flex-col gap-4 justify-end items-center w-full">
               {/* LinkedIn (Mobile) */}
-              <li className="text-slate-700 dark:text-secondary font-poppins text-[16px] font-medium cursor-pointer hover:text-[#915eff] dark:hover:text-white transition-colors">
+              <li className="text-slate-700 dark:text-secondary font-sans text-[16px] font-medium cursor-pointer hover:text-[#915eff] dark:hover:text-white transition-colors">
                 <a
                   href="https://www.linkedin.com/in/moezzakir/"
                   target="_blank"
@@ -155,7 +172,7 @@ const Navbar = () => {
                     active === items.title
                       ? "text-[#915eff] font-bold"
                       : "text-slate-700 dark:text-secondary"
-                  } font-poppins text-[16px] font-medium cursor-pointer hover:text-[#915eff] dark:hover:text-white transition-colors`}
+                  } font-sans text-[16px] font-medium cursor-pointer hover:text-[#915eff] dark:hover:text-white transition-colors`}
                   onClick={() => {
                     setActive(items.title);
                     setToggle(!toggle);

@@ -1,5 +1,6 @@
 "use client";
 
+import Image from "next/image";
 import { motion } from "framer-motion";
 import {
   VerticalTimeline,
@@ -35,9 +36,11 @@ const ExperienceCard = ({ experience }) => {
       }}
       icon={
         <div className="flex justify-center items-center w-full h-full">
-          <img
+          <Image
             src={experience.icon}
             alt={experience.company_name}
+            width={48}
+            height={48}
             className="w-[60%] h-[60%] object-contain"
           />
         </div>

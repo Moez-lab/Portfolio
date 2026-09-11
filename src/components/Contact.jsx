@@ -90,33 +90,39 @@ function Contact() {
           onSubmit={handleSubmit}
           className="mt-12 flex flex-col gap-8"
         >
-          <label className="flex flex-col">
+          <label htmlFor="contact-name" className="flex flex-col">
             <span className="text-slate-800 dark:text-white font-medium mb-4">Your Name</span>
             <input
+              id="contact-name"
               type="text"
               name="name"
+              autoComplete="name"
               value={form.name}
               onChange={handleChange}
               placeholder="What's your good name?"
               className="bg-white dark:bg-tertiary py-4 px-6 placeholder:text-slate-400 dark:placeholder:text-secondary text-slate-900 dark:text-white rounded-lg outline-none border border-slate-300 dark:border-transparent font-medium focus:border-[#915eff] dark:focus:border-[#915eff] transition-all"
             />
           </label>
-          <label className="flex flex-col">
+          <label htmlFor="contact-email" className="flex flex-col">
             <span className="text-slate-800 dark:text-white font-medium mb-4">Your email</span>
             <input
+              id="contact-email"
               type="email"
               name="email"
+              autoComplete="email"
               value={form.email}
               onChange={handleChange}
               placeholder="What's your email address?"
               className="bg-white dark:bg-tertiary py-4 px-6 placeholder:text-slate-400 dark:placeholder:text-secondary text-slate-900 dark:text-white rounded-lg outline-none border border-slate-300 dark:border-transparent font-medium focus:border-[#915eff] dark:focus:border-[#915eff] transition-all"
             />
           </label>
-          <label className="flex flex-col">
+          <label htmlFor="contact-message" className="flex flex-col">
             <span className="text-slate-800 dark:text-white font-medium mb-4">Your Message</span>
             <textarea
+              id="contact-message"
               rows={7}
               name="message"
+              autoComplete="off"
               value={form.message}
               onChange={handleChange}
               placeholder="What do you want to say?"

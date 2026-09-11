@@ -1,6 +1,7 @@
 "use client";
 
 import { useState, useCallback } from "react";
+import Image from "next/image";
 import { motion } from "framer-motion";
 import { styles } from "../style";
 import { fadeIn, textVariant } from "../utils/motion";
@@ -73,11 +74,13 @@ const ProjectCard = ({
         {/* ── Image carousel ─────────────────────────────────── */}
         <div className="relative w-full h-[230px] overflow-hidden rounded-2xl group">
           {/* Clickable image — opens full-size in new tab */}
-          <img
+          <Image
             src={imgList[currentImg]}
             alt={`${name} screenshot ${currentImg + 1}`}
+            fill
+            sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 360px"
             onClick={() => window.open(imgList[currentImg], "_blank")}
-            className="w-full h-full object-cover rounded-2xl cursor-zoom-in"
+            className="object-cover rounded-2xl cursor-zoom-in"
             style={{
               transition: "opacity 0.2s ease",
               opacity: fading ? 0 : 1,

@@ -1,13 +1,12 @@
 "use client";
 
-import { motion } from "framer-motion";
+import Image from "next/image";
 import { styles } from "../style";
 
 // Assets served from public/assets/
 const myPhoto = "/assets/profile/pfpic.png";
 const github = "/assets/icons/github.png";
 const linkedin = "/assets/icons/linkedin.png";
-
 
 const Hero = () => {
     return (
@@ -42,10 +41,12 @@ const Hero = () => {
                                 target="_blank"
                                 rel="noopener noreferrer"
                             >
-                                <img
-                                    className="h-10 w-10 brightness-0 dark:brightness-100"
+                                <Image
+                                    className="h-10 w-10 brightness-0 dark:brightness-100 object-contain"
                                     src={github}
                                     alt="Github"
+                                    width={40}
+                                    height={40}
                                 />
                                 <p className="text-slate-700 dark:text-white text-[14px] mt-1 font-medium">Github</p>
                             </a>
@@ -56,10 +57,12 @@ const Hero = () => {
                                 target="_blank"
                                 rel="noopener noreferrer"
                             >
-                                <img
-                                    className="h-10 w-10"
+                                <Image
+                                    className="h-10 w-10 object-contain"
                                     src={linkedin}
                                     alt="Linkedin"
+                                    width={40}
+                                    height={40}
                                 />
                                 <p className="text-slate-700 dark:text-white text-[14px] mt-1 font-medium">Linkedin</p>
                             </a>
@@ -85,11 +88,13 @@ const Hero = () => {
                         {/* Optional: Add a glow effect behind the image */}
                         <div className="absolute z-0 w-[40%] h-[35%] top-0 pink__gradient opacity-50 dark:opacity-100" />
 
-                        <img
+                        <Image
                             src={myPhoto}
-                            alt="Moez"
-                            // Replaced rounded-2xl with rounded-full.
-                            // Added aspect-square and changed object-contain to object-cover for a perfect circle.
+                            alt="Moez Zakir - Full Stack Web/App Developer & AI/ML Engineer"
+                            width={400}
+                            height={400}
+                            priority
+                            sizes="(max-width: 768px) 70vw, 400px"
                             className="w-[70%] aspect-square object-cover rounded-full z-10 border-2 border-slate-200 dark:border-secondary/20 shadow-xl dark:shadow-card"
                         />
                     </div>

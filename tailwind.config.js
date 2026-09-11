@@ -24,6 +24,10 @@ module.exports = {
       screens: {
         xs: "450px",
       },
+      fontFamily: {
+        sora: ["var(--font-sora)", "sans-serif"],
+        sans: ["var(--font-sora)", "sans-serif"],
+      },
     },
   },
   plugins: [],

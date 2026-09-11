@@ -1,5 +1,6 @@
 "use client";
 
+import Image from "next/image";
 import { motion } from 'framer-motion';
 import { styles } from '../style';
 import { services } from '../constants';
@@ -17,17 +18,19 @@ const ServiceCard = ({ index, title, icon }) => {
         <div
           className="bg-white dark:bg-tertiary rounded-[20px] py-5 px-12 min-h-[280px] flex justify-evenly items-center flex-col shadow-sm dark:shadow-none transition-colors duration-300"
         >
-          <img
+          <Image
             src={icon}
             alt={title}
+            width={64}
+            height={64}
             className="w-16 h-16 object-contain"
           />
           <h3 className="text-slate-900 dark:text-white text-[20px] font-bold text-center">{title}</h3>
         </div>
       </motion.div>
     </div>
-  )
-}
+  );
+};
 
 const About = () => {
   return (
@@ -36,29 +39,30 @@ const About = () => {
         variants={textVariant()}
         initial="hidden"
         whileInView="show"
-        viewport={{ once: true, amount: 0 }} // Trigger as soon as the element is in view
+        viewport={{ once: true, amount: 0 }}
       >
         <p className={styles.sectionSubText}>Introduction</p>
         <h2 className={styles.sectionHeadText}>Overview</h2>
       </motion.div>
 
-
-      <motion.p
+      <motion.div
         variants={fadeIn('', '', 0.05, 0.55)}
-        className={`${styles.sectionSubText} mt-4 text-slate-600 dark:text-secondary text-[17px] max-w-3xl leading-[30px]`}
-        viewport={{ once: true, amount: 0 }} // Adjusted viewport trigger
+        viewport={{ once: true, amount: 0 }}
+        className="mt-4 text-slate-600 dark:text-secondary text-[17px] max-w-3xl leading-[30px]"
       >
-        <b>AI Engineer & MERN Stack Developer</b><br />
-        I turn data and algorithms into smart, production-ready applications. With a strong foundation in AI Integration, Machine Learning, Deep Learning, and Computer Vision, I specialise in taking AI out of the research phase and integrating it into intuitive, scalable software.<br />
+        <p>
+          <b>AI Engineer & MERN Stack Developer</b><br />
+          I turn data and algorithms into smart, production-ready applications. With a strong foundation in AI Integration, Machine Learning, Deep Learning, and Computer Vision, I specialise in taking AI out of the research phase and integrating it into intuitive, scalable software.<br />
 
-        <br /><b>What I do:</b> <br />
-        <b>• Agentic AI & LLM Systems</b><br />
-        <b>• Full-Stack Product Engineering</b><br />
-        <b>• Computer Vision & ML</b><br />
-        <b>• Workflow Automation</b><br />
+          <br /><b>What I do:</b> <br />
+          <b>• Agentic AI & LLM Systems</b><br />
+          <b>• Full-Stack Product Engineering</b><br />
+          <b>• Computer Vision & ML</b><br />
+          <b>• Workflow Automation</b><br />
 
-        <br /> Let's connect if you're talking about AI deployment/integration, ML, or building the next generation of smart apps and webs!
-      </motion.p>
+          <br /> Let's connect if you're talking about AI deployment/integration, ML, or building the next generation of smart apps and webs!
+        </p>
+      </motion.div>
 
       <div className="mt-20 flex flex-wrap gap-10">
         {services.map((service, index) => (
@@ -66,7 +70,7 @@ const About = () => {
         ))}
       </div>
     </>
-  )
-}
+  );
+};
 
 export default SectionWrapper(About, "about");

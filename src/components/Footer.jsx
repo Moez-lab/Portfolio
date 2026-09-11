@@ -1,6 +1,7 @@
 "use client";
 
 import React from 'react';
+import Image from 'next/image';
 import { navLinks } from '../constants';
 
 const github = "/assets/icons/github.png";
@@ -25,7 +26,13 @@ const Footer = () => {
               window.scrollTo(0, 0);
             }}
           >
-            <img src={logo} alt="logo" className="w-16 h-16 object-contain mb-2 group-hover:scale-110 transition-transform duration-300" />
+            <Image
+              src={logo}
+              alt="Moez logo"
+              width={64}
+              height={64}
+              className="w-16 h-16 object-contain mb-2 group-hover:scale-110 transition-transform duration-300"
+            />
             <p className="text-slate-900 dark:text-white text-[20px] font-bold tracking-widest mt-2 group-hover:text-[#915EFF] transition-colors duration-300">
               Moez<span className="text-[#915EFF] group-hover:text-white transition-colors duration-300">.</span>
             </p>
@@ -56,26 +63,36 @@ const Footer = () => {
           <div className="flex flex-col items-center md:items-end">
             <h3 className="text-slate-900 dark:text-white font-bold text-[18px] mb-4">Let's Connect</h3>
             <div className="flex gap-4">
-              <div
-                onClick={() => window.open("https://github.com/Moez-lab", "_blank")}
-                className="w-12 h-12 bg-slate-200 dark:bg-black-200 rounded-full flex justify-center items-center cursor-pointer hover:bg-[#915EFF] hover:shadow-neon transition-all hover:-translate-y-1 duration-300 border border-slate-300 dark:border-white/5 hover:border-transparent"
+              <a
+                href="https://github.com/Moez-lab"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="Visit Moez's GitHub profile"
+                className="w-12 h-12 bg-slate-200 dark:bg-black-200 rounded-full flex justify-center items-center hover:bg-[#915EFF] hover:shadow-neon transition-all hover:-translate-y-1 duration-300 border border-slate-300 dark:border-white/5 hover:border-transparent"
               >
-                <img
+                <Image
                   src={github}
-                  alt="github"
-                  className="w-1/2 h-1/2 object-contain"
+                  alt="GitHub"
+                  width={24}
+                  height={24}
+                  className="w-1/2 h-1/2 object-contain brightness-0 dark:brightness-100"
                 />
-              </div>
-              <div
-                onClick={() => window.open("https://www.linkedin.com/in/moezzakir/", "_blank")}
-                className="w-12 h-12 bg-slate-200 dark:bg-black-200 rounded-full flex justify-center items-center cursor-pointer hover:bg-[#915EFF] hover:shadow-neon transition-all hover:-translate-y-1 duration-300 border border-slate-300 dark:border-white/5 hover:border-transparent"
+              </a>
+              <a
+                href="https://www.linkedin.com/in/moezzakir/"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="Visit Moez's LinkedIn profile"
+                className="w-12 h-12 bg-slate-200 dark:bg-black-200 rounded-full flex justify-center items-center hover:bg-[#915EFF] hover:shadow-neon transition-all hover:-translate-y-1 duration-300 border border-slate-300 dark:border-white/5 hover:border-transparent"
               >
-                <img
+                <Image
                   src={linkedin}
-                  alt="linkedin"
+                  alt="LinkedIn"
+                  width={24}
+                  height={24}
                   className="w-1/2 h-1/2 object-contain"
                 />
-              </div>
+              </a>
             </div>
           </div>
           

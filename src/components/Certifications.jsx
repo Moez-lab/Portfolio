@@ -60,6 +60,7 @@ const CertCard = ({ index, title, issuer, link }) => {
         href={link}
         target="_blank"
         rel="noopener noreferrer"
+        aria-label={`View credential for ${title} from ${issuer}`}
         className="mt-auto inline-flex items-center gap-1.5 text-[13px] font-medium text-slate-500 dark:text-secondary hover:text-blue-500 dark:hover:text-white transition-colors duration-200"
       >
         View Credential <ExternalLinkIcon />
