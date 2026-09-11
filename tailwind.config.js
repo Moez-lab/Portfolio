@@ -18,13 +18,11 @@ module.exports = {
       },
       boxShadow: {
         card: "0px 35px 120px -15px #211e35",
+        "card-light": "0px 10px 40px -10px rgba(0, 0, 0, 0.10)",
         neon: "0px 0px 20px rgba(145, 94, 255, 0.6)",
       },
       screens: {
         xs: "450px",
-      },
-      backgroundImage: {
-        "hero-pattern": "url('/herobg.png')",
       },
     },
   },

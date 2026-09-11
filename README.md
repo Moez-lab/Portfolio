@@ -1,176 +1,226 @@
-# 🚀 Moez Zakir - AI/ML Engineer Portfolio
+# Moez Zakir AI Engineer & Full-Stack Developer Portfolio
 
-A modern, interactive portfolio website showcasing my work as an AI/ML Engineer and LLM integrator. Built with React, Three.js, and cutting-edge web technologies to create an engaging user experience with 3D animations and smooth interactions.
+A modern, interactive personal portfolio built with **Next.js 16**, **Three.js**, and **Framer Motion**. Features 3D animations, a vertical experience timeline, project showcases, certifications, and a contact form all with seamless light/dark mode support.
 
-## ✨ Features
+**Live:** [moezzakir.vercel.app](https://moezzakir.vercel.app) *(update with your actual URL)*
 
-- **3D Interactive Elements** - Powered by Three.js and React Three Fiber
-- **Smooth Animations** - Framer Motion for fluid page transitions and effects
-- **Responsive Design** - Works seamlessly on desktop, tablet, and mobile devices
-- **Resume Viewer** - View or download resume directly from the site
-- **Contact Form** - Integrated EmailJS for direct communication with WhatsApp backup
-- **Dark Theme** - Modern glassmorphism and gradient effects
-- **Project Showcase** - Interactive timeline and project cards with detailed information
+---
+
+## Features
+
+- **3D Interactive Globe :** Powered by Three.js & React Three Fiber
+- **Light / Dark Mode :** System-aware with a manual toggle, persisted via localStorage
+- **Smooth Animations :** Framer Motion page transitions, fade-ins, and stagger effects
+- **Experience Timeline :** Vertical timeline with company logos and bullet points
+- **Project Showcase :** Image carousel cards with multi-image support and Read More toggle
+- **Certifications Section :** Issuer-colour-coded credential cards with external links
+- **Stats / Milestones :** Animated counters with gradient accent cards
+- **Contact Form :** EmailJS integration for direct email delivery
+- **Responsive :** Mobile-first layout, works on all screen sizes
+- **Sora Font :** Clean, modern geometric typeface throughout
+
+---
 
 ## 🛠️ Tech Stack
 
-### Frontend
-- **React 19** - Modern UI library
-- **Vite** - Fast build tool and dev server
-- **TailwindCSS** - Utility-first CSS framework
-- **Framer Motion** - Animation library
-- **React Router** - Client-side routing
+### Framework & Build
 
-### 3D Graphics
-- **Three.js** - 3D library
-- **React Three Fiber** - React renderer for Three.js
-- **React Three Drei** - Useful helpers for React Three Fiber
+| Tool                    | Purpose                                           |
+| ----------------------- | ------------------------------------------------- |
+| **Next.js 16**    | App Router, SSR/SSG, dynamic imports              |
+| **Turbopack**     | Lightning-fast dev server (default in Next.js 16) |
+| **React 19**      | UI library                                        |
+| **TailwindCSS 3** | Utility-first styling                             |
 
-### Other Libraries
-- **EmailJS** - Email service integration
-- **React Parallax Tilt** - Tilt effects
-- **React Vertical Timeline** - Timeline component
+### Animation & 3D
 
-## 🚀 Getting Started
+| Tool                        | Purpose                                            |
+| --------------------------- | -------------------------------------------------- |
+| **Framer Motion**     | Page animations, scroll-triggered fade-ins         |
+| **Three.js**          | 3D rendering engine                                |
+| **React Three Fiber** | React renderer for Three.js                        |
+| **React Three Drei**  | Helpers :`OrbitControls`, `Decal`, `Preload` |
+| **Maath**             | Math utilities for 3D                              |
 
-### Prerequisites
+### UI & UX
 
-- Node.js (v16 or higher)
-- npm or yarn
+| Tool                              | Purpose                     |
+| --------------------------------- | --------------------------- |
+| **React Vertical Timeline** | Experience section timeline |
+| **React Parallax Tilt**     | Tilt hover effect on cards  |
+| **EmailJS Browser**         | Contact form email delivery |
 
-### Installation
-
-1. **Clone the repository**
-   ```bash
-   git clone git@github.com:Moez-lab/portfolio.git
-   cd portfolio
-   ```
-
-2. **Install dependencies**
-   ```bash
-   npm install
-   ```
-
-3. **Start the development server**
-   ```bash
-   npm run dev
-   ```
-
-4. **Open your browser**
-   - Navigate to `http://localhost:5173`
-
-## 📦 Build for Production
-
-```bash
-npm run build
-```
-
-The production-ready files will be in the `dist` folder.
-
-## 🧪 Preview Production Build
-
-```bash
-npm run preview
-```
-
-## 📧 EmailJS Configuration
-
-The contact form uses EmailJS for sending emails. To use your own EmailJS account:
-
-1. Sign up at [EmailJS](https://www.emailjs.com/)
-2. Create a new email service
-3. Create an email template
-4. Update the credentials in `src/components/Contact.jsx`:
-   - Service ID
-   - Template ID
-   - Public Key
+---
 
 ## 📁 Project Structure
 
 ```
 portfolio/
+├── app/
+│   ├── ClientApp.jsx       # Root client component — assembles all sections
+│   ├── globals.css         # Global styles, Sora font, CSS variables
+│   ├── layout.jsx          # Next.js root layout
+│   └── page.jsx            # Entry page (renders ClientApp)
 ├── src/
-│   ├── assets/          # Images, icons, and static files
-│   ├── components/      # React components
-│   │   ├── About.jsx
-│   │   ├── Contact.jsx
-│   │   ├── Experience.jsx
-│   │   ├── Hero.jsx
-│   │   ├── Navbar.jsx
-│   │   ├── Tech.jsx
-│   │   └── Work.jsx
-│   ├── constants/       # Configuration and data
-│   ├── hoc/            # Higher-order components
-│   ├── utils/          # Utility functions
-│   ├── App.jsx         # Main app component
-│   ├── index.css       # Global styles
-│   └── main.jsx        # Entry point
-├── public/             # Public assets
-├── index.html          # HTML template
-└── package.json        # Dependencies and scripts
+│   ├── components/
+│   │   ├── About.jsx           # Overview & service cards
+│   │   ├── Certifications.jsx  # Certification credential cards
+│   │   ├── Contact.jsx         # EmailJS contact form
+│   │   ├── Experience.jsx      # Vertical timeline (work history)
+│   │   ├── Footer.jsx          # Footer with links
+│   │   ├── Hero.jsx            # Landing hero with 3D globe
+│   │   ├── Navbar.jsx          # Responsive nav with dark mode toggle
+│   │   ├── Stats.jsx           # Milestones / achievement counters
+│   │   └── Work.jsx            # Project cards with image carousel
+│   ├── constants/
+│   │   └── index.js            # All data: nav, services, experiences, projects, certs
+│   ├── context/
+│   │   └── ThemeContext.jsx    # Light/dark mode context
+│   ├── hoc/
+│   │   └── index.js            # SectionWrapper HOC (scroll anchor + motion)
+│   ├── style.js                # Shared Tailwind class strings
+│   └── utils/
+│       └── motion.js           # Framer Motion animation variants
+├── public/
+│   └── assets/
+│       ├── experience/         # Company logos
+│       ├── projects/           # Project screenshots
+│       └── tech/               # Technology icons
+├── next.config.mjs
+├── tailwind.config.js
+└── package.json
 ```
-
-## 🎨 Customization
-
-### Update Personal Information
-
-1. **Hero Section** - Edit `src/components/Hero.jsx`
-2. **About Section** - Edit `src/components/About.jsx`
-3. **Projects** - Update `src/constants/index.js`
-4. **Experience** - Update `src/constants/index.js`
-5. **Resume** - Replace `src/assets/resume.pdf`
-
-### Update Images
-
-- Profile photo: `src/assets/pfpic.png`
-- Logo: `src/assets/logo.png`
-- Company logos: `src/assets/company/`
-- Technology icons: `src/assets/tech/`
-
-## 📜 Available Scripts
-
-| Command | Description |
-|---------|-------------|
-| `npm run dev` | Start development server |
-| `npm run build` | Build for production |
-| `npm run preview` | Preview production build |
-| `npm run lint` | Run ESLint |
-
-## 🌐 Deployment
-
-This portfolio can be deployed to various platforms:
-
-- **Vercel** (Recommended) - Perfect for React apps
-- **Netlify** - Easy deployment with continuous integration
-- **GitHub Pages** - Free hosting for static sites
-
-### Deploy to Vercel
-
-```bash
-npm install -g vercel
-vercel
-```
-
-## 👨‍💻 About Me
-
-I'm an AI/ML Engineer and LLM integrator specializing in:
-- Generative AI & Large Language Models
-- Deep Learning & Computer Vision
-- Natural Language Processing
-- Model Deployment & MLOps
-
-**Skills**: Python, TensorFlow, Hugging Face, OpenCV, n8n, Pandas, SQL, FastAPI, Docker
-
-## 📫 Contact
-
-- **LinkedIn**: [Moez Zakir](https://www.linkedin.com/in/moezzakir/)
-- **GitHub**: [Moez-lab](https://github.com/Moez-lab)
-- **WhatsApp**: [Contact Me](https://wa.me/923208517943)
-
-## 📝 License
-
-This project is open source and available under the [MIT License](LICENSE).
 
 ---
 
-⭐ **If you find this portfolio helpful, please consider giving it a star!**
+## Getting Started
+
+### Prerequisites
+
+- **Node.js** v18 or higher
+- **npm** v9+
+
+### Installation
+
+```bash
+# 1. Clone the repo
+git clone https://github.com/Moez-lab/portfolio.git
+cd portfolio
+
+# 2. Install dependencies
+npm install
+
+# 3. Start the dev server (Turbopack)
+npm run dev
+```
+
+Open [http://localhost:3000](http://localhost:3000) in your browser.
+
+---
+
+## Scripts
+
+| Command           | Description                                 |
+| ----------------- | ------------------------------------------- |
+| `npm run dev`   | Start development server (Turbopack)        |
+| `npm run build` | Build for production (outputs to`.next/`) |
+| `npm run start` | Serve the production build                  |
+| `npm run lint`  | Run ESLint                                  |
+
+---
+
+## EmailJS Setup
+
+The contact form uses [EmailJS](https://www.emailjs.com/) no backend needed.
+
+1. Sign up at emailjs.com and create an **Email Service** (Gmail)
+2. Create an **Email Template** with variables: `{{name}}`, `{{email}}`, `{{message}}`
+3. Update credentials in [`src/components/Contact.jsx`](src/components/Contact.jsx):
+
+```js
+emailjs.send(
+  "YOUR_SERVICE_ID",
+  "YOUR_TEMPLATE_ID",
+  { name, email, message },
+  "YOUR_PUBLIC_KEY"
+)
+```
+
+> **Note:** If you see a `412 Invalid grant` error, reconnect your Gmail account in the EmailJS dashboard → Email Services.
+
+---
+
+## Customisation
+
+All content lives in **[`src/constants/index.js`](src/constants/index.js)**:
+
+| Export             | What it controls                                |
+| ------------------ | ----------------------------------------------- |
+| `navLinks`       | Navbar links                                    |
+| `services`       | About section service cards                     |
+| `technologies`   | Tech icon grid                                  |
+| `experiences`    | Experience timeline entries                     |
+| `projects`       | Project cards (name, description, tags, images) |
+| `certifications` | Certification cards with issuer & link          |
+
+### Update images
+
+| Asset               | Path                          |
+| ------------------- | ----------------------------- |
+| Company logos       | `public/assets/experience/` |
+| Project screenshots | `public/assets/projects/`   |
+| Tech icons          | `public/assets/tech/`       |
+
+---
+
+## Deployment (Vercel)
+
+This project is a **Next.js** app Vercel auto-detects it.
+
+1. Push to GitHub
+2. Import repo on [vercel.com](https://vercel.com/new)
+3. Set **Framework Preset** → `Next.js`
+4. Leave Build Command & Output Directory blank (auto-detected)
+5. Deploy ✅
+
+> No `vercel.json` needed Next.js is natively supported.
+
+---
+
+## Page Sections (in order)
+
+1. **Hero :** Intro, 3D animated globe, CTA buttons
+2. **About :** Overview text + specialisation service cards
+3. **Stats :**  Milestones (Projects, Certifications, Roles)
+4. **Experience :**  Vertical timeline of work history
+5. **Work :**  Project showcase with image carousels
+6. **Certifications :** Credential cards (Stanford, Harvard, Udemy, Cisco)
+7. **Contact :** EmailJS contact form
+
+---
+
+## 👨‍💻 About Me
+
+**Moez Zakir** AI Engineer & Full-Stack Developer
+
+Specialising in:
+
+- Agentic AI & LLM Systems (n8n, LangChain, Gemini)
+- Full-Stack Product Engineering (Next.js, React, Node.js)
+- Computer Vision & ML (OpenCV, PyTorch)
+- Workflow Automation
+
+---
+
+## Contact
+
+| Platform | Link                                                               |
+| -------- | ------------------------------------------------------------------ |
+| LinkedIn | [linkedin.com/in/moezzakir](https://www.linkedin.com/in/moezzakir/) |
+| GitHub   | [github.com/Moez-lab](https://github.com/Moez-lab)                  |
+
+---
+
+## License
+
+Open source under the [MIT License](LICENSE)

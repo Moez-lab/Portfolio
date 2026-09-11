@@ -35,6 +35,16 @@ const Work = dynamic(() => import("../src/components/Work"), {
   loading: () => <PageLoader />,
 });
 
+const Experience = dynamic(() => import("../src/components/Experience"), {
+  ssr: false,
+  loading: () => <PageLoader />,
+});
+
+const Certifications = dynamic(() => import("../src/components/Certifications"), {
+  ssr: false,
+  loading: () => <PageLoader />,
+});
+
 const Contact = dynamic(() => import("../src/components/Contact"), {
   ssr: false,
   loading: () => <PageLoader />,
@@ -54,7 +64,9 @@ export default function ClientApp() {
           <Hero />
           <About />
           <Stats />
+          <Experience />
           <Work />
+          <Certifications />
           <Contact />
           <Footer />
         </div>

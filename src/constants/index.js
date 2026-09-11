@@ -4,6 +4,10 @@ export const navLinks = [
     title: "About",
   },
   {
+    id: "experience",
+    title: "Experience",
+  },
+  {
     id: "work",
     title: "Work",
   },
@@ -93,16 +97,16 @@ const technologies = [
 
 const experiences = [
   {
-    title: "Full Stack Engineer & AI Developer",
-    company_name: "Fintech Fusion",
-    icon: "/assets/experience/fullstack.png",
-    iconBg: "#E6DEDD",
-    date: "April 2026 - Present",
+    title: "Application Support Analyst",
+    company_name: "FinTech Fusion",
+    icon: "/assets/experience/fintech_fusion_logo.png",
+    iconBg: "transparent",
+    date: "Aug 2026 - Present | Remote, Australia",
     points: [
-      "Architecting and developing modern, responsive fintech web applications utilizing Next.js, React.js, and Node.js.",
-      "Designing and implementing Agentic AI workflows and LLM systems (n8n, LangChain, Gemini) for automated financial operations and analysis.",
-      "Optimizing database schemas and server architectures (FastAPI, MongoDB, PostgreSQL) for high-performance and sub-second query latency.",
-      "Collaborating in cross-functional teams to build clean, maintainable product features and API integrations."
+      "Monitored live payment processing and settlement pipelines daily, verifying accurate end-to-end job execution across scheduled financial jobs.",
+      "Queried and cross-checked transaction and settlement data using SQL to identify discrepancies, proactively flagging and escalating execution anomalies before client impact.",
+      "Troubleshot recurring pipeline and job-scheduling issues, collaborating with cross-functional teams to drive timely resolution.",
+      "Maintained clear documentation of recurring issues and resolution steps to support faster diagnosis on future incidents."
     ],
   },
 ];
@@ -184,4 +188,42 @@ const projects = [
   },
 ];
 
-export { services, technologies, experiences, projects };
+const certifications = [
+  {
+    title: "Machine Learning Specialization",
+    issuer: "Stanford Online",
+    link: "https://www.coursera.org/account/accomplishments/specialization/PWDW56N37BR5",
+  },
+  {
+    title: "Supervised Machine Learning",
+    issuer: "Stanford Online",
+    link: "https://www.coursera.org/account/accomplishments/verify/1UWGXN6JTLUH",
+  },
+  {
+    title: "Computer Vision",
+    issuer: "Udemy",
+    link: "https://www.udemy.com/certificate/UC-08a10337-785e-430d-b5d5-b78caeca8ccc/",
+  },
+  {
+    title: "AI & Deep Learning",
+    issuer: "Stanford Online",
+    link: "https://www.coursera.org/account/accomplishments/verify/CIHD2N6DTHS2",
+  },
+  {
+    title: "Unsupervised Learning",
+    issuer: "Stanford Online",
+    link: "https://www.coursera.org/account/accomplishments/verify/A885NAK96ACO",
+  },
+  {
+    title: "Computer Networking",
+    issuer: "Cisco",
+    link: "https://www.credly.com/badges/4d43ad53-9632-4368-82b0-17b11ec41206/linked_in_profile",
+  },
+  {
+    title: "CS50x Puzzle Day 2026",
+    issuer: "Harvard University",
+    link: "https://certificates.cs50.io/50a4b075-fe27-4c07-9bcc-7538cb350a8f.pdf?size=letter",
+  },
+];
+
+export { services, technologies, experiences, projects, certifications };

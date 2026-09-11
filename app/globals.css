@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Sora:wght@100;200;300;400;500;600;700;800&display=swap");
 
 @tailwind base;
 @tailwind components;
@@ -11,17 +11,27 @@ body {
 
 html {
   color-scheme: light;
+  --exp-card-bg: #ffffff;
+  --exp-card-text: #0f172a;
+  --exp-card-border: #e2e8f0;
+  --exp-card-shadow: 0 4px 24px -4px rgba(0, 0, 0, 0.08);
+  --exp-line-color: #e2e8f0;
 }
 
 html.dark {
   color-scheme: dark;
+  --exp-card-bg: #1d1836;
+  --exp-card-text: #ffffff;
+  --exp-card-border: rgba(255,255,255,0.06);
+  --exp-card-shadow: 0 8px 32px -8px rgba(0,0,0,0.5);
+  --exp-line-color: rgba(255,255,255,0.08);
 }
 
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: "Poppins", sans-serif;
+  font-family: "Sora", sans-serif;
   scroll-behavior: smooth;
 }
 

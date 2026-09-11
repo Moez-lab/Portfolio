@@ -66,8 +66,12 @@ function Contact() {
         },
         (error) => {
           setLoading(false);
-          console.error(error);
-          alert("Ahh, something went wrong. Please try again.");
+          // EmailJS rejects with { status, text } — not a plain Error object,
+          // so console.error(error) prints {} . Extract the meaningful fields:
+          const status = error?.status ?? "unknown";
+          const text   = error?.text   ?? JSON.stringify(error);
+          console.error(`EmailJS error [${status}]:`, text);
+          alert(`Ahh, something went wrong (${status}). Please try again.`);
         }
       );
   };
