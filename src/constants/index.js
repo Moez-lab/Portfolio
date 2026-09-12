@@ -113,19 +113,26 @@ const experiences = [
 
 const projects = [
   {
-    name: "AI Agent for CRM Lead Qualification & Email Outreach",
-    description: "Automated n8n workflow that integrated with Google Workspace and Gemini AI using asynchronous polling, custom OAuth 2.0, AI agent orchestration, and structured JSON parsing. The automation extracted incoming spreadsheet leads, utilized an LLM to evaluate the data, enforced strict output formatting to strip conversational filler, and dispatched personalized welcome emails via Gmail all without manual intervention",
+    name: "Real-Time Fraud Detection & Autonomous MLOps Pipeline",
+    description: "Streaming fraud detection system processing 284K+ transactions with sub-100ms latency via Kafka and PySpark Pandas UDF. XGBoost classifier achieves 98.3% ROC-AUC. Includes an autonomous triage agent that evaluates customer profiles and executes automated actions (card freezing, SMS 2FA) without human intervention. Features a full Airflow MLOps retrain pipeline with Jensen-Shannon divergence drift monitors and a champion/challenger model governance registry. Dockerized across seven services using Docker Compose.",
     tags: [
-      { name: "n8n", color: "blue-text-gradient" },
-      { name: "Automation", color: "green-text-gradient" },
-      { name: "Zapier", color: "pink-text-gradient" },
-      { name: "CRM", color: "blue-text-gradient" },
+      { name: "Kafka / Spark", color: "blue-text-gradient" },
+      { name: "XGBoost · 98.3% AUC", color: "green-text-gradient" },
+      { name: "Airflow / MLflow", color: "pink-text-gradient" },
+      { name: "Gemini AI", color: "blue-text-gradient" },
+      { name: "Docker", color: "green-text-gradient" },
     ],
-    images: ["/assets/projects/n8n_project.png"],
-    source_code_link: "#",
+    images: [
+      "/assets/projects/fraud_airflow_pipeline.png",
+      "/assets/projects/fraud_triage_agent.png",
+      "/assets/projects/fraud_streaming_scoring.png",
+      "/assets/projects/fraud_spark_engine.png",
+      "/assets/projects/fraud_mlflow_tracking.png",
+    ],
+    source_code_link: "https://github.com/Moez-lab",
   },
   {
-    name: "MzTrend RAG E-Commerce Platform",
+    name: "MzTrend E-Commerce",
     description: "Designed and maintained a PostgreSQL database schema via Prisma ORM, covering product catalog, orders, coupons, and role-based access data. Built a hybrid semantic search engine combining BM25 keyword scoring with Gemini vector embeddings and intent detection. Developed a full-stack e-commerce architecture including a complete storefront, cart, checkout with coupons, and a comprehensive role-based admin dashboard. Implemented NextAuth v4 authentication, Prisma adapter, password resets, and route-level middleware protection.",
     tags: [
       { name: "Next.js 16", color: "blue-text-gradient" },
@@ -149,39 +156,6 @@ const projects = [
     source_code_link: "https://github.com/Moez-lab/AI-Base-Ecommerce.git",
   },
   {
-    name: "AI Base Attendance System",
-    description: "An AI-powered face recognition attendance system using Python, OpenCV, and Tkinter automate student attendance with real-time facial detection, image training, and CSV tracking",
-    tags: [
-      { name: "Computer Vision", color: "blue-text-gradient" },
-      { name: "OpenCV", color: "green-text-gradient" },
-      { name: "Tkinter", color: "pink-text-gradient" },
-      { name: "Python", color: "blue-text-gradient" },
-      { name: "Machine Learning", color: "green-text-gradient" },
-    ],
-    images: ["/assets/projects/AiAttendance.png"],
-    source_code_link: "https://github.com/Moez-lab/AI-Base-Attendance-System.git",
-  },
-
-  {
-    name: "Real-Time Fraud Detection & Autonomous MLOps Pipeline",
-    description: "Streaming fraud detection system processing 284K+ transactions with sub-100ms latency via Kafka and PySpark Pandas UDF. XGBoost classifier achieves 98.3% ROC-AUC. Includes an autonomous triage agent that evaluates customer profiles and executes automated actions (card freezing, SMS 2FA) without human intervention. Features a full Airflow MLOps retrain pipeline with Jensen-Shannon divergence drift monitors and a champion/challenger model governance registry. Dockerized across seven services using Docker Compose.",
-    tags: [
-      { name: "Kafka / Spark", color: "blue-text-gradient" },
-      { name: "XGBoost · 98.3% AUC", color: "green-text-gradient" },
-      { name: "Airflow / MLflow", color: "pink-text-gradient" },
-      { name: "Gemini AI", color: "blue-text-gradient" },
-      { name: "Docker", color: "green-text-gradient" },
-    ],
-    images: [
-      "/assets/projects/fraud_airflow_pipeline.png",
-      "/assets/projects/fraud_triage_agent.png",
-      "/assets/projects/fraud_streaming_scoring.png",
-      "/assets/projects/fraud_spark_engine.png",
-      "/assets/projects/fraud_mlflow_tracking.png",
-    ],
-    source_code_link: "https://github.com/Moez-lab",
-  },
-  {
     name: "AI Voice Pipeline for E-Commerce Support",
     description: "Low-latency voice AI pipeline using Vapi AI with strict guardrails for tier-1 e-commerce support. Orchestrates Make.com and Google Gemini to analyze call transcripts, extract customer sentiment, and flag urgent issues via structured JSON. Automates backend routing: resolved calls are silently logged to Sheets while critical issues trigger real-time Slack alerts for human handoffs — reducing support overhead significantly.",
     tags: [
@@ -196,6 +170,31 @@ const projects = [
       "/assets/projects/voice_pipeline_slack.png",
     ],
     source_code_link: "#",
+  },
+  {
+    name: "AI Agent for CRM Lead Qualification & Email Outreach",
+    description: "Automated n8n workflow that integrated with Google Workspace and Gemini AI using asynchronous polling, custom OAuth 2.0, AI agent orchestration, and structured JSON parsing. The automation extracted incoming spreadsheet leads, utilized an LLM to evaluate the data, enforced strict output formatting to strip conversational filler, and dispatched personalized welcome emails via Gmail all without manual intervention",
+    tags: [
+      { name: "n8n", color: "blue-text-gradient" },
+      { name: "Automation", color: "green-text-gradient" },
+      { name: "Zapier", color: "pink-text-gradient" },
+      { name: "CRM", color: "blue-text-gradient" },
+    ],
+    images: ["/assets/projects/n8n_project.png"],
+    source_code_link: "#",
+  },
+  {
+    name: "AI Base Attendance System",
+    description: "An AI-powered face recognition attendance system using Python, OpenCV, and Tkinter automate student attendance with real-time facial detection, image training, and CSV tracking",
+    tags: [
+      { name: "Computer Vision", color: "blue-text-gradient" },
+      { name: "OpenCV", color: "green-text-gradient" },
+      { name: "Tkinter", color: "pink-text-gradient" },
+      { name: "Python", color: "blue-text-gradient" },
+      { name: "Machine Learning", color: "green-text-gradient" },
+    ],
+    images: ["/assets/projects/AiAttendance.png"],
+    source_code_link: "https://github.com/Moez-lab/AI-Base-Attendance-System.git",
   },
 ];
 
