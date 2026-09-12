@@ -126,7 +126,7 @@ const projects = [
   },
   {
     name: "MzTrend RAG E-Commerce Platform",
-    description: "Full-stack e-commerce platform featuring MzBot, a RAG-powered AI chatbot using Gemini text-embedding-004 and cosine similarity search over a custom product knowledge base. Implements a hybrid semantic search engine combining BM25 keyword scoring with Gemini vector embeddings and intent detection. Built with Next.js 16, TypeScript, and PostgreSQL. Includes full storefront, cart, checkout with coupons, and a role-based admin dashboard with NextAuth v4 authentication.",
+    description: "Designed and maintained a PostgreSQL database schema via Prisma ORM, covering product catalog, orders, coupons, and role-based access data. Built a hybrid semantic search engine combining BM25 keyword scoring with Gemini vector embeddings and intent detection. Developed a full-stack e-commerce architecture including a complete storefront, cart, checkout with coupons, and a comprehensive role-based admin dashboard. Implemented NextAuth v4 authentication, Prisma adapter, password resets, and route-level middleware protection.",
     tags: [
       { name: "Next.js 16", color: "blue-text-gradient" },
       { name: "RAG / Gemini AI", color: "green-text-gradient" },
@@ -134,7 +134,18 @@ const projects = [
       { name: "NextAuth v4", color: "blue-text-gradient" },
       { name: "TypeScript", color: "green-text-gradient" },
     ],
-    images: ["/assets/projects/Eweb.png"],
+    images: [
+      "/assets/projects/E-1.png",
+      "/assets/projects/E-2.png",
+      "/assets/projects/E-3.png",
+      "/assets/projects/E-4.png",
+      "/assets/projects/E-5.png",
+      "/assets/projects/E-6.png",
+      "/assets/projects/E-7.png",
+      "/assets/projects/E-8.png",
+      "/assets/projects/E-9.png",
+      "/assets/projects/E-10.png",
+    ],
     source_code_link: "https://github.com/Moez-lab/AI-Base-Ecommerce.git",
   },
   {
