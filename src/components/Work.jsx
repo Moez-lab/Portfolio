@@ -165,12 +165,7 @@ const ProjectCard = ({
 const Work = () => {
   return (
     <>
-      <motion.div
-        variants={textVariant()}
-        initial="hidden"
-        whileInView="show"
-        viewport={{ once: true, amount: 0 }}
-      >
+      <motion.div variants={textVariant()}>
         <p className={styles.sectionSubText}>My Work</p>
         <h2 className={styles.sectionHeadText}>Projects</h2>
       </motion.div>

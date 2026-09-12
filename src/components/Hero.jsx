@@ -94,8 +94,10 @@ const Hero = () => {
                             width={400}
                             height={400}
                             priority
-                            sizes="(max-width: 768px) 70vw, 400px"
-                            className="w-[70%] aspect-square object-cover rounded-full z-10 border-2 border-slate-200 dark:border-secondary/20 shadow-xl dark:shadow-card"
+                            fetchPriority="high"
+                            sizes="(max-width: 640px) 180px, (max-width: 1024px) 300px, 400px"
+                            style={{ width: "auto", height: "auto" }}
+                            className="w-[70%] max-w-[340px] aspect-square object-cover rounded-full z-10 border-2 border-slate-200 dark:border-secondary/20 shadow-xl dark:shadow-card"
                         />
                     </div>
 

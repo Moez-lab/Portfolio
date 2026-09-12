@@ -13,7 +13,6 @@ const ServiceCard = ({ index, title, icon }) => {
       <motion.div
         variants={fadeIn('right', 'spring', index * 0.25, 0.5)}
         className="w-full green-pink-gradient p-[1px] rounded-[20px] shadow-card-light dark:shadow-card"
-        viewport={{ once: true, amount: 0 }}
       >
         <div
           className="bg-white dark:bg-tertiary rounded-[20px] py-5 px-12 min-h-[280px] flex justify-evenly items-center flex-col shadow-sm dark:shadow-none transition-colors duration-300"
@@ -35,19 +34,13 @@ const ServiceCard = ({ index, title, icon }) => {
 const About = () => {
   return (
     <>
-      <motion.div
-        variants={textVariant()}
-        initial="hidden"
-        whileInView="show"
-        viewport={{ once: true, amount: 0 }}
-      >
+      <motion.div variants={textVariant()}>
         <p className={styles.sectionSubText}>Introduction</p>
         <h2 className={styles.sectionHeadText}>Overview</h2>
       </motion.div>
 
       <motion.div
         variants={fadeIn('', '', 0.05, 0.55)}
-        viewport={{ once: true, amount: 0 }}
         className="mt-4 text-slate-600 dark:text-secondary text-[17px] max-w-3xl leading-[30px]"
       >
         <p>

@@ -12,7 +12,7 @@ import Certifications from "../src/components/Certifications";
 import Contact from "../src/components/Contact";
 import Footer from "../src/components/Footer";
 
-// Experience uses react-vertical-timeline-component which references window/DOM
+// Experience uses react-vertical-timeline-component which references browser window/DOM
 const Experience = dynamic(() => import("../src/components/Experience"), {
   ssr: false,
   loading: () => null,

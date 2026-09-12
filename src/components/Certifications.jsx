@@ -72,12 +72,7 @@ const CertCard = ({ index, title, issuer, link }) => {
 const Certifications = () => {
   return (
     <>
-      <motion.div
-        variants={textVariant()}
-        initial="hidden"
-        whileInView="show"
-        viewport={{ once: true, amount: 0 }}
-      >
+      <motion.div variants={textVariant()}>
         <p className={styles.sectionSubText}>What I&apos;ve Earned</p>
         <h2 className={styles.sectionHeadText}>Certifications</h2>
       </motion.div>

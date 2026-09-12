@@ -78,12 +78,7 @@ const ExperienceCard = ({ experience }) => {
 const Experience = () => {
   return (
     <>
-      <motion.div
-        variants={textVariant()}
-        initial="hidden"
-        whileInView="show"
-        viewport={{ once: true, amount: 0 }}
-      >
+      <motion.div variants={textVariant()}>
         <p className={styles.sectionSubText}>What I&apos;ve done so far</p>
         <h2 className={styles.sectionHeadText}>Work Experience.</h2>
       </motion.div>
