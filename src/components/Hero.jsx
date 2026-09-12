@@ -84,7 +84,7 @@ const Hero = () => {
                     </div>
 
                     {/* B. Image Section (Right Side) */}
-                    <div className="flex-1 flex justify-center items-center relative">
+                    <div className="w-full lg:flex-1 flex justify-center items-center relative mt-2 sm:mt-0">
                         {/* Optional: Add a glow effect behind the image */}
                         <div className="absolute z-0 w-[40%] h-[35%] top-0 pink__gradient opacity-50 dark:opacity-100" />
 
@@ -95,9 +95,8 @@ const Hero = () => {
                             height={400}
                             priority
                             fetchPriority="high"
-                            sizes="(max-width: 640px) 180px, (max-width: 1024px) 300px, 400px"
-                            style={{ width: "auto", height: "auto" }}
-                            className="w-[70%] max-w-[340px] aspect-square object-cover rounded-full z-10 border-2 border-slate-200 dark:border-secondary/20 shadow-xl dark:shadow-card"
+                            sizes="(max-width: 640px) 280px, (max-width: 1024px) 320px, 400px"
+                            className="w-[230px] h-[230px] min-[380px]:w-[260px] min-[380px]:h-[260px] sm:w-[290px] sm:h-[290px] lg:w-[330px] lg:h-[330px] xl:w-[360px] xl:h-[360px] aspect-square object-cover rounded-full z-10 border-2 border-slate-200 dark:border-secondary/20 shadow-xl dark:shadow-card"
                         />
                     </div>
 
