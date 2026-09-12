@@ -2,7 +2,7 @@
 
 A modern, interactive personal portfolio built with **Next.js 16** and **Framer Motion**, featuring a vertical experience timeline, project showcases, certifications, and a contact form  all with seamless light/dark mode support.
 
-🌐 **Live:** [moezzakir.vercel.app](https://moezzakir.vercel.app)
+🌐 **Live:** [moezzakir.vercel.app](https://portfolio-mueez-labs-projects.vercel.app/)
 
 ---
 
